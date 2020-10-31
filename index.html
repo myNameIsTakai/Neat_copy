@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="navbarStyle.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:wght@300&display=swap" rel="stylesheet">
+    <title>Document</title>
+</head>
+<body>
+    <section class="navBar">
+        <!-- Origin Row  -->
+        <div class="row">
+            <div class="col text-md-left text-sm-center text-center">
+                <!-- แถบแจ้งเตือนโปรโมชั่น -->
+                <div class="alert-bar">
+                    <p>Try voucher code <b>HALLOWEEN20</b> for <b>20% OFF</b> 😜.<br class="breakline">Expires 31/10/2020.</p>
+                </div>
+            </div>
+        </div>
+        <!-- แถบ nav bar -->
+        <div class="row">
+            <div class="col">
+                <nav class="navbar navbar-expand-lg navbar-custom">
+                    <!-- Logo -->
+                    <a class="navbar-brand" href=""><svg width="5.625rem" height="3.125rem"><path fill="white" d="M16.3 27.3c-.1-.3-.3-.3-.4-.3-1.5 0-6.2 10.3-9.6 15.9-.4.8-.8 1-1.2 1-1.3.1-4.6-1.8-4.6-3.3 3.1-6.2 17-32.8 17.5-35 .4-1.4 1.9-1.7 3-1.7 1.8 0 6.2 2 6.2 4.2 0 .6-.5.9-.6 1.3-3.8 11.6-4.2 12.2-5.9 22C24.5 23 29.9 8.8 32.8 2.9c.4-1.4 1.9-1.7 3.1-1.7 1.8 0 6.2 2 6.2 4.2 0 .6-.3 1-.6 1.3-10.6 13.1-16.8 26.4-19.9 33.9-.5 1.2-1.2 1.6-1.7 1.6-1.2 0-2.4-1.2-3.8-2.6-.7-.6-.9-1.5-.9-2.5 0-2.2.6-6.3 1.1-9.8zm15.6 9.4c-.1.8-.2 1.4-.2 2 0 1.2.5 1.7 1.5 1.7 3.5 0 7.5-3.7 10.8-7.6 1.5-1.6 6.4-7.7 7.3-9 .2-.2.3-.3.4-.3.5 0 .8 1 .8 1-1.3 2.2-4.2 6.4-7.1 10.3-3.5 4.7-8.3 8.7-11.4 8.7-1.9 0-6.7-2.9-6.7-6.7C27.3 29.2 34.5 18 40 18c1.6 0 2 2.7 3.6 3.7 1.1.7 2.9 1 2.9 3.5-.2 2.5-10.2 9.2-14.6 11.5zm9.9-12.2c-.2-.1-.4-.1-.5-.1-3.6.9-6.9 4.9-8.5 9.3 6.1-4.2 8.1-7.3 9-9.2zm12.4 14c-1.9 1.9-4.5 4.7-6 4.7-1.9 0-4.5-1.5-4.5-3.7 0-7 8.6-21.8 12.7-21.8.3 0 .5.1.9.2 1.2.5 2.9 1.7 2.9 3.4 0 .5-.3 1.1-.8 1.5 1.8.2 4 1.5 4 3.4 0 .6-.2 1.2-.6 1.6-1.5 2-3.9 5.8-4.6 7.6-.4 1.2-.6 1.7-.6 2.3 0 .6.3.9.6.9.4 0 .9-.3 1.2-.8.5-.5 2.4-2.8 4.5-5.1 1.5-1.6 6.4-7.7 7.3-9 .2-.2.3-.3.4-.3.5 0 .8 1 .8 1-1.4 2.1-4.3 6.4-7.2 10.3-2.9 3.9-6 8.2-7.8 8.2-1.6.2-3.1-1.1-3.2-4.4zm1.9-10.6c0-.6-.4-1.1-.9-1.1-1.6 0-7.7 9.6-7.7 12.3 0 .5.2.7.5.7s.5-.1.9-.3c2.2-1.8 6.5-9.2 7.2-11.1v-.5zM79.8 8c1.5 0 4 1.8 4 3.6 0 .5-.2 1-.4 1.2-1.2 1.8-2.6 3.8-3.9 5.8 1.2.9 2.7 1.5 2.7 2.6 0 .6-.3.8-.8.8l-4.6.6c-3.3 4.7-6.4 9.7-8.3 14.1-.2.6-.3 1.1-.3 1.4 0 .5.2.9.6.9.3 0 .9-.2 1.5-.6.9-.5 3.5-2.4 5.7-5.3 1.5-1.6 6.4-7.7 7.3-9 .2-.2.3-.3.4-.3.5 0 .8 1 .8 1-1.4 2.1-4.4 6.4-7.2 10.3-1.5 2.2-4.8 5.9-6.8 7.5-.4.3-.9.5-1.3.5-2.1 0-4.8-2.5-4.8-4.7 0-3 3-9.2 6.2-15.2-3.2-1.1-3.6-2.7-3.6-4.3 0-.6.3-.8.8-.8 1 0 3.2.3 5.4.4 2-3.7 3.8-7 4.5-8.6C77.9 8.3 79 8 79.8 8z"></path></svg></a>
+                    <!-- ปุ่มกดตอนย่อจอ -->
+                    <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon navbar-light"></span></button>
+                    <!-- แถบจอปกติ     -->
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav mr-auto">
+                            <!-- Location Section -->
+                            <li class="nav-item dropdown" id="fst" style="margin-left: 10rem;">
+                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <b>LOCATIONS</b>
+                                </a>
+                                <div class="dropdown-menu shadow-lg p-3 bg-white rounded border-0" aria-labelledby="navbarDropdown">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col-md-4">
+                                                <div class="card border-0" style="width:15vw;">
+                                                    <img class="card-img-top rounded" src="https://i1.wp.com/thisisneat.com.au/wp-content/uploads/2020/01/locations-sydney.jpg?resize=280%2C175&ssl=1" alt="Card image cap">
+                                                    <h6 class="card-title"><a href="">SYDNEY</a></h6>
+                                                    <p class="card-text">From hidden terraces to apartment high-rises, we offer Sydney's best end of lease cleaning service.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                    <div class="card border-0 " style="width: 15vw;">
+                                                        <img class="card-img-top rounded" src="https://i2.wp.com/thisisneat.com.au/wp-content/uploads/2020/01/locations-melbourne.jpg?resize=280%2C175&ssl=1" alt="Card image cap">
+                                                        <h6 class="card-title"><a href="">MELBOURNE</a></h6>
+                                                        <p class="card-text">Melbourne might be known for it’s coffee culture, but our claim to fame is a hassle-free end of lease clean.</p>
+                                                    </div>
+                                            </div>
+                                        </div>
+                                        <div class="border-top my-4">
+                                            <div class="row">
+                                                <div class="col">
+                                                    <div class="card border-0 card-bottom">
+                                                        <ul class="bottom-list">
+                                                            <li class="bottom-link"><a href="">Inner West</a></li>
+                                                            <li class="bottom-link"><a href="">Eastern Suburbs</a></li>
+                                                            <li class="bottom-link"><a href="">Northern Beaches</a></li>
+                                                            <li class="bottom-link"><a href="">North Shore</a></li>
+                                                        </ul>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>        
+                                </div>
+                            </li>
+                            <!-- Service Section -->
+                            <li class="nav-item dropdown" id="sst" style="padding-left: 3.75rem;">
+                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <b>SERVICES</b>
+                                </a>
+                                <div id="position-dp" class="dropdown-menu shadow-lg p-3 bg-white rounded border-0" aria-labelledby="navbarDropdown" style="left: -97%;">
+                                    <div class="container">
+                                        <div class="row" style="margin-bottom: 3%;">
+                                            <div class="col-md-4">
+                                                <div class="card border-0" style="width:15vw;">
+                                                    <img class="card-img-top rounded" src="https://i0.wp.com/thisisneat.com.au/wp-content/uploads/2020/01/end-of-lease-cleaning-service.jpg?resize=280%2C175&ssl=1" alt="Card image cap">
+                                                    <h6 class="card-title"><a href="">END OF LEASE CLEANING</a></h6>
+                                                    <p class="card-text">With our famous bond back guarantee, our cleaners always ensure tenants recover their full rental deposits.</p>
+                                                </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                    <div class="card border-0 " style="width: 15vw;">
+                                                        <img class="card-img-top rounded" src="https://i0.wp.com/thisisneat.com.au/wp-content/uploads/2020/01/vacate-cleaning-service.jpg?resize=280%2C175&ssl=1" alt="Card image cap">
+                                                        <h6 class="card-title"><a href="">VACATE CLEANING</a></h6>
+                                                        <p class="card-text">Our 5-star rated cleaners specialise in helping renters pass their final vacate inspections.</p>
+                                                    </div>
+                                            </div>
+                                            <div class="col-md-4">
+                                                <div class="card border-0 " style="width: 15vw;">
+                                                    <img class="card-img-top rounded" src="https://i0.wp.com/thisisneat.com.au/wp-content/uploads/2020/01/move-in-move-out-cleaning-service.jpg?resize=280%2C175&ssl=1" alt="Card image cap">
+                                                    <h6 class="card-title"><a href="">MOVING CLEANING</a></h6>
+                                                    <p class="card-text">Our cleaning teams will make sure your property is ready for sale, a rental inspection, or for your family to move into.</p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Resource Section -->
+                            <li class="nav-item dropdown" id="sst" style="padding-left: 3.75rem;">
+                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <b>RESOURCES</b>
+                                </a>
+                                <div id="position-dp-2" class="dropdown-menu shadow-lg p-3 bg-white rounded border-0" aria-labelledby="navbarDropdown" style="left: -205%;">
+                                    <div class="container">
+                                        <div class="row">
+                                            <div class="col">
+                                                <a class="dropdown-item" href="#">Action</a>
+                                                <a class="dropdown-item" href="#">Another action</a>
+                                                <a class="dropdown-item" href="#">Something else here</a>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                            <!-- Blog Section -->
+                            <li class="nav-item" id="sst" style="padding-left: 3.75rem;">
+                                <a class="nav-link active text-light" href="#"><b>BLOG</b></a>
+                            </li>
+                            <!-- Reviews -->
+                            <li class="nav-item" id="sst" style="padding-left: 3.75rem;">
+                                <a class="nav-link active text-light" href="#"><b>REVIEWS</b></a>
+                            </li>
+                        </ul>
+                        <!-- ปุ่ม GET THE QUOTE -->
+                        <form class="form-inline my-2 my-lg-0 text-light">
+                          <button class="btn btn-outline-success bg-danger my-2 my-sm-0" id="custom-form" type="submit">GET A QUOTE</button>
+                        </form>
+                    </div>
+                </nav>
+            </div>
+        </div>
+    </section>
+</body>
+</html>
