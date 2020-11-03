@@ -140,8 +140,44 @@
                         </form>
                     </div>
                 </nav>
+                <!-- แถบจอ responsive -->
+                <div class="collapse navbar-collapse bg-dark" id="navbarNavDropdown" >
+                    <div class="container">
+                         <p>eodfop</p>
+                    </div>
+                </div>
             </div>
         </div>
     </section>
+    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script>
+        // ตัวนับการคลิกเพื่อเปลี่ยนสีพื้นหลังnav bar
+        var count = 0;
+        var countButton = document.getElementById("togglebtn");
+        countButton.onclick = function(){
+        count++;
+        Btn(count)
+        console.log(count);
+        }
+        // fucntion เปลี่ยนสี nav bar
+        function Btn(count)
+        {   
+            var nav = document.querySelector('.navbar-custom');
+            var alert_promotoion = document.querySelector('.alert-bar')
+            if(count % 2 != 0)
+            {
+                nav.setAttribute("style", "background-color: #333333; border:none;")
+                alert_promotoion.setAttribute("style", "background-color: #2B2B2B; border:none;")
+                
+
+            }
+            else if(count % 2 ==0)
+            {
+                nav.style.backgroundColor = '#1B9DFF';
+                alert_promotoion.style.backgroundColor = '#1786D9';
+            }
+        }
+    </script>
 </body>
 </html>
