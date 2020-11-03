@@ -13,6 +13,7 @@
     text-indent: 2%;
     padding-top: 0.25%;
     padding-bottom: 0.25%;
+    border: none;
 }
 .alert-bar > p /*ลบ mr ของ p ออก*/
 {
@@ -53,7 +54,7 @@
 /*Dropdown menu section*/
 .dropdown-menu  /*resize dropdown*/
 {
-    width: 810px !important;
+    width: 51em !important;
     height: auto !important;
 }
 .dropdown .dropdown-menu /*dropdown animation*/
@@ -86,7 +87,7 @@
 .card /*custom card */
 { 
     font-size: 0.75rem;
-    margin-top: 3%;
+    margin-top: 4.5%;
 }
 .bottom-list, .bottom-link /*link in location section*/
 {
@@ -112,8 +113,12 @@
 
 
 /*ส่วน responsive ของหน้าจอ(จะเอาเหมือนต้องทำใหม่)*/
-@media screen and (max-width: 1400px)
+@media screen and (max-width: 1200px)
 {
+    .txt-alert
+    {
+        text-align: center;
+    }
     .dropdown-menu  /*resize dropdown*/
     {
         width: 635px !important;
