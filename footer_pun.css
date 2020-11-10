@@ -1,0 +1,342 @@
+html {
+    text-size-adjust: 100%;
+}
+
+body {
+    font-family: Nunito Sans,Arial,sans-serif;
+    font-weight: 300;
+    color: #666;
+    -webkit-font-feature-settings: "lnum";
+    font-feature-settings: "lnum";
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 34px;
+    line-height: 2.125rem;
+}
+
+.section--overflow {
+    overflow: hidden;
+}
+
+@media only screen and (min-height: 768px) and (min-width: 992px){
+   .section--padding {
+    padding: 150px 0;
+    } 
+}
+
+.section--padding {
+    margin-bottom: 0;
+    padding: 50px 0;
+}
+@media only screen and (min-height: 768px) and (min-width: 992px){
+   .section--margin {
+    margin-bottom: 150px;
+    } 
+}
+.section {
+    position: relative;
+}
+
+/* กำหนดดสีพื้นหลัง */
+.section--color-darkest-grey {
+    background: #333;
+}
+
+.section__content>*{
+    margin-bottom: 100px;
+
+}
+
+/* กำหนดความทึบlogo */
+.icon--opacity-high {
+    opacity: .075;
+}
+.icon--block, .icon--block svg{
+    display: block;
+    margin: 0 auto;
+}
+
+/* กำหนดาสีฟ้อน */
+.footer{
+    color: #fff;
+}
+
+
+@media only screen and (min-width: 1680px){
+  .grid-wrapper {
+    padding: 0 150px;
+    max-width: 1680px;
+    }  
+}
+@media only screen and (min-width: 1200px){
+    .grid-wrapper {
+    padding: 0 100px;
+    }
+}
+@media only screen and (max-width: 575px){
+    .grid-wrapper {
+    padding-left: 25px;
+    padding-right: 25px;
+    }
+}
+
+.grid-wrapper {
+    margin: 0 auto;
+    padding: 0 200px;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+.grid--gutter-lg{
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+@media only screen and (min-width: 768px){
+   .col--4\@md-up {
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+    } 
+}
+.grid--gutter-lg>*{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* ส่วนของ logo neat */
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.icon--white {
+    fill: #fff;
+}
+
+
+.footer__byline{
+    margin-bottom: 30px;
+    display: block;
+}
+/* กำหนดขนาดฟ้อนให้ tag small */
+small {
+    font-weight: 300;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 22px;
+    line-height: 1.375rem;
+    letter-spacing: .5px;
+}
+
+.grid ul.grid, .list{
+    list-style-type: none;
+}
+
+/* ทำให้เรียงเป็นrowเดียวกันในแถบสีทึบข้างล่าง */
+.list--inline .list__item {
+    display: inline-flex;
+}
+
+.grid>*{
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+/* กำหนดขนาด icon */
+.icon--sm {
+    width: 20px;
+    height: 20px;
+}
+
+@media only screen and (min-width: 768px){
+    .col--7\@md-up {
+    flex-basis: 58.33333%;
+    max-width: 58.33333%;
+    }
+    .col--offset-1\@md-up {
+        margin-left: 8.33333%;
+    }
+}
+@media only screen and (min-width: 992px){
+    .grid--spacing-none\@lg-up>*{
+        margin-bottom: 0;
+    }
+}
+
+/* กำหนดฟ้อนที่มีการลิ้ง */
+.footer__links {
+    line-height: 34px;
+    font-size: 14px;
+    font-size: .875rem;
+    letter-spacing: .5px;
+}
+
+/* ขีดเส้นใต้ให้หัวข้อ */
+.footer__category {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsla(0,0%,100%,.25);
+}
+/* กำหนดขนาดฟ้อนหัวข้อ */
+.heading--tiny{
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 22px;
+    line-height: 1.375rem;
+    letter-spacing: .5px;
+    font-weight: 700;
+    font-family: Nunito Sans,Arial,sans-serif;
+    text-transform: uppercase;
+}
+.footer__copy>:last-child{
+    margin-bottom: 0;
+}
+/* ทำให้ข้อความที่มีการลิ้งเป็นเหมือนฟ้อนธรรมดา และ เป็นรูปมือเวลา hover */
+.footer__copy a , .footer__terms a, .footer__copy a:hover{
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+.link, .link:hover {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/* แถบทึบด้านล่างสุด */
+.footer__legal {
+    width: 100%;
+    padding: 10px 0 7.5px;
+    background: rgba(0,0,0,.15);
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 22px;
+    line-height: 1.375rem;
+    letter-spacing: .5px;
+    font-weight: 300;
+}
+
+/* ปรับขนาด icon social */
+.contact{
+    width: 4%;
+    margin-left: 10px;
+}
+
+/* SVG วงกลมกับสี่เหลี่ยมที่เป็นพื้นหลัง */
+/* svgวงกลม */
+#circle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    
+}
+/* svgสี่เหลี่ยม */
+#square {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+/* เพิ่ม space ระหว่าาง item */
+.grid--justify-space-between {
+    justify-content: space-between;
+}
+/* จัดให้อยุ่ตรงกลาง */
+.grid--align-center {
+    align-items: center;
+}
+
+@media only screen and (min-width: 576px){
+    .grid--spacing-none\@sm-up>*{
+        margin-bottom: 0;
+    }
+}
+
+.footer__terms>:last-child{
+    margin-bottom: 0;
+}
+
+.list--gutter-sm{
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+.list--gutter-sm>*{
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+@media only screen and (min-width: 992px){
+    .grid--spacing-none\@lg-up>*, .grid--spacing-none\@lg-up>:last-child{
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 576px){
+    .footer__legal {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    }
+}
+@media only screen and (min-width: 768px){
+    .footer__links {
+    margin-top: 70px;
+    }
+
+}
+@media only screen and (min-width: 1680px){
+    .grid--gutter-xl\@xxl-up {
+    margin-left: -37.5px;
+    margin-right: -37.5px;
+    }
+}
+@media only screen and (min-width: 576px){
+    .grid--gutter-lg\@sm-up {
+    margin-left: -25px;
+    margin-right: -25px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .grid--justify-flex-end\@md-up {
+    justify-content: flex-end;
+    }
+}
+
+
+@media only screen and (min-width: 1680px){
+    .grid--gutter-xl\@xxl-up>* {
+    padding-left: 37.5px;
+    padding-right: 37.5px;
+    }
+}
+@media only screen and (min-width: 576px){
+  .grid--gutter-lg\@sm-up>* {
+    padding-left: 25px;
+    padding-right: 25px;
+    }  
+}
+
+@media only screen and (min-width: 1200px){
+    .grid--columns-auto\@xl-up>* {
+    flex-basis: auto;
+    max-width: none;
+    }
+}
+@media only screen and (min-width: 576px){
+    .grid--columns-auto\@sm-up>* {
+    flex-basis: auto;
+    max-width: none;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .grid--columns-equal\@md-up>* {
+    flex: 1 1 auto;
+    }
+}
