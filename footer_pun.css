@@ -222,6 +222,7 @@ small {
 
 /* ปรับขนาด icon social */
 .contact{
+    position: relative;
     width: 4%;
     margin-left: 10px;
 }
