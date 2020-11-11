@@ -12,37 +12,38 @@ body {
     font-size: 1.125rem;
     line-height: 34px;
     line-height: 2.125rem;
+    overflow-x: hidden;
 }
 
-.section--overflow {
+.section__footer--overflow {
     overflow: hidden;
 }
 
 @media only screen and (min-height: 768px) and (min-width: 992px){
-   .section--padding {
+   .section__footer--padding {
     padding: 150px 0;
     } 
 }
 
-.section--padding {
+.section__footer--padding {
     margin-bottom: 0;
     padding: 50px 0;
 }
 @media only screen and (min-height: 768px) and (min-width: 992px){
-   .section--margin {
+   .section__footer--margin {
     margin-bottom: 150px;
     } 
 }
-.section {
+.section__footer {
     position: relative;
 }
 
 /* กำหนดดสีพื้นหลัง */
-.section--color-darkest-grey {
+.section__footer--color-darkest-grey {
     background: #333;
 }
 
-.section__content>*{
+.section__footer__content>*{
     margin-bottom: 100px;
 
 }
@@ -63,34 +64,34 @@ body {
 
 
 @media only screen and (min-width: 1680px){
-  .grid-wrapper {
+  .grid__footer-wrapper {
     padding: 0 150px;
     max-width: 1680px;
     }  
 }
 @media only screen and (min-width: 1200px){
-    .grid-wrapper {
+    .grid__footer-wrapper {
     padding: 0 100px;
     }
 }
 @media only screen and (max-width: 575px){
-    .grid-wrapper {
+    .grid__footer-wrapper {
     padding-left: 25px;
     padding-right: 25px;
     }
 }
 
-.grid-wrapper {
+.grid__footer-wrapper {
     margin: 0 auto;
     padding: 0 200px;
 }
-.grid {
+.grid__footer {
     display: flex;
     flex-wrap: wrap;
     margin-left: -7.5px;
     margin-right: -7.5px;
 }
-.grid--gutter-lg{
+.grid__footer--gutter-lg{
     margin-left: -25px;
     margin-right: -25px;
 }
@@ -101,7 +102,7 @@ body {
     max-width: 33.33333%;
     } 
 }
-.grid--gutter-lg>*{
+.grid__footer--gutter-lg>*{
     padding-left: 25px;
     padding-right: 25px;
 }
@@ -131,7 +132,7 @@ small {
     letter-spacing: .5px;
 }
 
-.grid ul.grid, .list{
+.grid__footer ul.grid__footer, .list{
     list-style-type: none;
 }
 
@@ -140,7 +141,7 @@ small {
     display: inline-flex;
 }
 
-.grid>*{
+.grid__footer>*{
     padding-left: 7.5px;
     padding-right: 7.5px;
 }
@@ -160,7 +161,7 @@ small {
     }
 }
 @media only screen and (min-width: 992px){
-    .grid--spacing-none\@lg-up>*{
+    .grid__footer--spacing-none\@lg-up>*{
         margin-bottom: 0;
     }
 }
@@ -222,12 +223,17 @@ small {
 
 /* ปรับขนาด icon social */
 .contact{
-    position: relative;
     width: 4%;
     margin-left: 10px;
+    position: relative;
 }
 
 /* SVG วงกลมกับสี่เหลี่ยมที่เป็นพื้นหลัง */
+
+#wrapper-circle{
+    z-index: -100;
+}
+
 /* svgวงกลม */
 #circle {
     position: absolute;
@@ -235,7 +241,7 @@ small {
     left: 0px;
     bottom: 0px;
     right: 0px;
-    
+ 
 }
 /* svgสี่เหลี่ยม */
 #square {
@@ -245,16 +251,16 @@ small {
 }
 
 /* เพิ่ม space ระหว่าาง item */
-.grid--justify-space-between {
+.grid__footer--justify-space-between {
     justify-content: space-between;
 }
 /* จัดให้อยุ่ตรงกลาง */
-.grid--align-center {
+.grid__footer--align-center {
     align-items: center;
 }
 
 @media only screen and (min-width: 576px){
-    .grid--spacing-none\@sm-up>*{
+    .grid__footer--spacing-none\@sm-up>*{
         margin-bottom: 0;
     }
 }
@@ -263,17 +269,17 @@ small {
     margin-bottom: 0;
 }
 
-.list--gutter-sm{
+.list__footer--gutter-sm{
     margin-left: -7.5px;
     margin-right: -7.5px;
 }
-.list--gutter-sm>*{
+.list__footer--gutter-sm>*{
     padding-left: 7.5px;
     padding-right: 7.5px;
 }
 
 @media only screen and (min-width: 992px){
-    .grid--spacing-none\@lg-up>*, .grid--spacing-none\@lg-up>:last-child{
+    .grid__footer--spacing-none\@lg-up>*, .grid--spacing-none\@lg-up>:last-child{
         margin-bottom: 0;
     }
 }
@@ -292,52 +298,52 @@ small {
 
 }
 @media only screen and (min-width: 1680px){
-    .grid--gutter-xl\@xxl-up {
+    .grid__footer--gutter-xl\@xxl-up {
     margin-left: -37.5px;
     margin-right: -37.5px;
     }
 }
 @media only screen and (min-width: 576px){
-    .grid--gutter-lg\@sm-up {
+    .grid__footer--gutter-lg\@sm-up {
     margin-left: -25px;
     margin-right: -25px;
     }
 }
 @media only screen and (min-width: 768px){
-    .grid--justify-flex-end\@md-up {
+    .grid__footer--justify-flex-end\@md-up {
     justify-content: flex-end;
     }
 }
 
 
 @media only screen and (min-width: 1680px){
-    .grid--gutter-xl\@xxl-up>* {
+    .grid__footer--gutter-xl\@xxl-up>* {
     padding-left: 37.5px;
     padding-right: 37.5px;
     }
 }
 @media only screen and (min-width: 576px){
-  .grid--gutter-lg\@sm-up>* {
+  .grid__footer--gutter-lg\@sm-up>* {
     padding-left: 25px;
     padding-right: 25px;
     }  
 }
 
 @media only screen and (min-width: 1200px){
-    .grid--columns-auto\@xl-up>* {
+    .grid__footer--columns-auto\@xl-up>* {
     flex-basis: auto;
     max-width: none;
     }
 }
 @media only screen and (min-width: 576px){
-    .grid--columns-auto\@sm-up>* {
+    .grid__footer--columns-auto\@sm-up>* {
     flex-basis: auto;
     max-width: none;
     }
 }
 
 @media only screen and (min-width: 768px){
-    .grid--columns-equal\@md-up>* {
+    .grid__footer--columns-equal\@md-up>* {
     flex: 1 1 auto;
     }
 }
