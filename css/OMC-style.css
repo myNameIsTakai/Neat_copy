@@ -1,0 +1,689 @@
+body, html{
+    /* font-family: 'Nunito',Arial, sans-serif; */
+    float: left;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;
+    overflow-x: hidden; 
+    
+}
+
+/* กำหนดฟ้อนที่ใช้ใน section นี้ */
+.navBar
+{
+    color: white;
+    font-size: 0.75rem;
+    font-family:'Nunito Sans', sans-serif;
+    z-index: -2;
+    position: relative;
+}
+
+/* แถบโปรโมชั่น */
+.alert-bar
+{
+    background-color: #1786D9;
+    text-indent: 2%;
+    padding-top: 0.25%;
+    padding-bottom: 0.25%;
+}
+.alert-bar > p /*ลบ mr ของ p ออก*/
+{
+    margin: 0 0 0;
+}
+
+.breakline /* ตัว br ที่ใช้ในแถบโปรโมชั่น */
+{
+    display: none; 
+}
+
+/* แถบ NavBar */
+.navbar-custom /* Custom Navbar code */
+{
+    font-size: 1rem;
+    background-color: #1B9DFF;
+}
+.nav-item /*ปรับฟ้อนท์ของlist item*/
+{
+    font-size: 0.75em;
+    font-family:'Nunito Sans', sans-serif;
+}
+
+#custom-form /*customize form and button*/
+{
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 0.75rem;
+    color:white;
+    font-weight: bold;
+    border-radius: 40px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #1B9DFF !important;
+    border: white solid 2px;
+}
+/*Dropdown menu section*/
+.dropdown-menu  /*resize dropdown*/
+{
+    width: 810px !important;
+    height: auto !important;
+}
+.dropdown .dropdown-menu /*dropdown animation*/
+{
+    display: block; 
+    opacity: 0;
+    top: 150%;
+    -webkit-transition:all .5s ease;
+    -moz-transition:all .5s ease;
+    -ms-transition:all .5s ease;
+    -o-transition:all .5s ease;
+    transition:all .5s ease;
+    visibility: hidden;
+}
+.dropdown:hover .dropdown-menu /*hover effect*/
+{
+    display: block;
+    opacity: 1;
+    top: 120%;
+    visibility: visible;
+}
+
+/*Card in dropdown*/
+.card-title /*custom card title*/
+{
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-top: 9%;
+}
+.card /*custom card */
+{ 
+    font-size: 0.75rem;
+    margin-top: 3%;
+}
+.bottom-list, .bottom-link /*link in location section*/
+{
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-link /*link in location section*/
+{
+    font-size: 0.9rem;
+    margin-right: 5%;
+}
+
+#sst /*position 2-5 List*/
+{
+    margin-left: 2.8rem ;
+}
+
+
+
+
+
+/*ส่วน responsive ของหน้าจอ(จะเอาเหมือนต้องทำใหม่)*/
+@media screen and (max-width: 1400px)
+{
+    .dropdown-menu  /*resize dropdown*/
+    {
+        width: 635px !important;
+        height: auto !important;
+    }
+
+    /* แถบ NavBar */
+    #fst /* 1st List*/
+    {
+        margin-left: 2rem !important;
+    }
+    #sst /* 2-5 List*/
+    {
+    margin-left: 3.5rem;
+    padding-left: 0px !important;
+    }
+    #custom-form /*ปุ่ม get a qoute*/
+    {
+        font-family:'Nunito Sans', sans-serif;
+        font-size: 0.75rem;
+        color:white;
+        font-weight: bold;
+        border-radius: 40px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        background-color: #1B9DFF !important;
+        border: white solid 2px;
+    }
+
+    #position-dp
+    {
+        left: -180% !important;
+    }
+
+    #position-dp-2
+    {
+        left: -296% !important;
+    }
+}
+
+@media screen and (max-width: 576px)
+{
+    .breakline /* ตัว br ที่ใช้ในแถบโปรโมชั่น */
+    {
+        display: inline;
+    }
+}
+
+/* background ส่วน Banner */
+.eol{
+    background-image: url(https://thisisneat.com.au/wp-content/themes/neat/shared/img/hero-background.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: #1b9dff;
+    height:auto;
+    width:100%;
+}
+
+/* @media screen and (max-width:992px){
+    .eol{
+    background-color: #1b9dff;
+    height:50%;
+    width:100%;
+    }s
+} */
+
+/* ฟ้อนส่วน banner */
+@media screen and (min-width:1679px){
+    .banner-head-font{
+        font-family:'Nunito Sans', sans-serif;
+        color: white;
+        font-size: 64px;
+        text-align: center;
+    }
+
+    .padding-img{
+        padding-left: 22%;
+        padding-right: 22%;
+    }
+
+}
+@media screen and (max-width:1679px){
+    .banner-head-font{
+        font-family:'Nunito Sans', sans-serif;
+        color: white;
+        font-size: 48px;
+        text-align: center;
+    }
+
+    .padding-img{
+        padding-left: 15%;
+        padding-right: 15%;
+    }
+
+}
+
+@media screen and (max-width:992px){
+    .banner-head-font{
+        font-family:'Nunito Sans', sans-serif;
+        color: white;
+        font-size: 36px;
+        text-align: center;
+    }
+
+    .padding-img{
+        padding-left: 3%;
+        padding-right: 3%;
+    }
+
+}
+
+.banner-head-feature{
+    font-family:'Nunito Sans', sans-serif;
+    color:white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.banner-neatTeam{
+    font-style:italic;
+    font-family:Georgia,Times,Times New Roman,serif;
+    color: white;
+    font-size: 14px;
+    text-align: center;
+    margin-bottom:75px;
+}
+
+ul.breadcrumb {
+    padding-top: 30px;
+    padding-bottom:25px;
+    padding-left:0px;
+    padding-right:0px;
+    margin-bottom:100px;
+    list-style: none;
+    background-color: #eee;
+}
+
+ul.breadcrumb li {
+    font-family:'Nunito Sans', sans-serif;
+    display: inline;
+    font-size: 12px;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 10px;
+    color: #AAAAAA;
+    content: ">";
+}
+
+ul.breadcrumb li a {
+    font-family:'Nunito Sans', sans-serif;
+    color: #AAAAAA;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    font-family:'Nunito Sans', sans-serif;
+    color: #1b9dff;
+    text-decoration: none;
+}
+
+.capital-letter{
+    margin: 30px 20px 30px -5px;
+    
+}
+
+.fletter::first-letter { 
+    float: left; 
+    color: #1b9dff;
+    font-size: 100px; 
+    line-height: 70px; 
+    padding-top: 4px; 
+    padding-right: 8px; 
+    padding-left: 3px; 
+    font-family:'Nunito Sans', sans-serif;
+}
+
+.font-feature{
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 18px;
+}
+
+/* Link ในข้อความ ไปยังหน้า moving-house-checklist */
+.EOL-link:link{
+    text-decoration: underline;
+    color: #1b9dff;
+}
+
+.EOL-link:hover{
+    text-decoration: underline;
+    color: #1b9dff;
+}
+
+.font-info-head{
+    /* margin-top:75px; */
+    /* margin-bottom:30px; */
+    font-family:'Nunito Sans', sans-serif;
+}
+
+.font-info{
+    font-size:18px;
+    font-family:'Nunito Sans', sans-serif;
+}
+
+@media screen and (min-width:1200px){
+    .info-padding{
+        padding-left: 30%;
+        padding-right: 30%;
+    } 
+}
+
+@media screen and (max-width:1200px){
+    .info-padding{
+        padding-left: 15%;
+        padding-right: 15%;
+    } 
+}
+
+@media screen and (max-width:992px){
+    .info-padding{
+        padding-left: 3%;
+        padding-right: 3%;
+    } 
+}
+
+.icon{
+    fill: #18ab5c;
+}
+
+.icon-sm{
+    width: 20px;
+    height: 20px;
+}
+
+.icon-block, .icon-block svg {
+display: block;
+margin: 0 auto;
+}
+
+.font-PDF{
+    font-family:'Nunito Sans', sans-serif;
+    font-size:14px;
+    color:#FF1A66; 
+    border: 3px #FF1A66 solid; 
+    border-radius: 5px;
+    margin-bottom: 100px;
+}
+
+/* PDF Botton */
+@media screen and (min-width: 1679px){
+    .botton-padding{
+        padding-right: 36%;
+        padding-left: 36%;
+    }
+}
+
+@media screen and (max-width: 1679px){
+    .botton-padding{
+        padding-right: 33%;
+        padding-left: 33%;
+    }
+}
+
+@media screen and (max-width: 767px){
+    .botton-padding{
+        padding-right: 3%;
+        padding-left: 3%;
+    }
+}
+
+/* ส่วนการ์ด */
+.font-homepage{
+    text-align: center;
+}
+
+.card-body{
+    width:100%;
+    float: left;
+    /* padding-left:30px;
+    padding-right:30px; */
+    position: relative;
+    font-family: 'Nunito Sans', sans-serif
+}
+.card{
+    height:100%;
+    position: static;
+}
+.card-header{
+    color: #333333;
+    font-size: 24px;
+}
+
+.info-card-head{
+    color: #666666;
+    font-size: 15px;
+}
+
+/* Card responsive */
+@media screen and (max-width:1200px){
+    .faluk{
+        padding-left:3%;   
+        padding-left:3%; 
+    }
+    
+}
+
+@media screen and (min-width: 1679px){
+    .faluk{
+        padding-left:15%;   
+        padding-right:15%;  
+    }
+}
+
+@media screen and (max-width: 1679px){
+    .faluk{
+        padding-left:6%;   
+        padding-right:6%;  
+    }
+    
+}
+
+.block{
+    height: 15vh;
+}
+
+/* Neat Profile */
+@media screen and (min-width:1200px){
+    .td-block{
+        padding-left:35px;
+        padding-right:30%;
+    }
+    .padding-profile{
+        padding-left: 20%;
+    }
+}
+
+@media screen and (max-width:1200px){
+    .td-block{
+        padding-left:35px;
+        padding-right:15%;
+    }
+    .padding-profile{
+        padding-left: 15%;
+    }
+}
+
+@media screen and (max-width:992px){
+    .td-block{
+        padding-left:35px;
+        padding-right:3%;
+    }
+    .padding-profile{
+        padding-left: 3%;
+    }
+}
+
+.font-italic{
+    font-style:italic;
+    font-family:Georgia,Times,Times New Roman,serif;
+    font-size: 18px;
+    padding-top: 65px;
+    color: #666666;
+}
+
+@media screen and (min-width:1679px){
+    .sub-font-italic{
+        font-family:Georgia,Times,Times New Roman,serif;
+        font-size: 18px;
+        float: right;
+        color: #666666;
+        padding-right:28%;
+    }
+}
+
+@media screen and (max-width:1679px){
+    .sub-font-italic{
+        font-family:Georgia,Times,Times New Roman,serif;
+        font-size: 18px;
+        float: right;
+        color: #666666;
+        padding-right:15%;
+    }
+}
+
+@media screen and (max-width:992px){
+    .sub-font-italic{
+        font-family:Georgia,Times,Times New Roman,serif;
+        font-size: 18px;
+        float: right;
+        color: #666666;
+        padding-right:3%;
+    }
+}
+
+/* footer */
+
+ul#footer li {
+    display: inline;
+}
+
+#footer_box {
+    background: #333;
+    color: white;
+    font-family: 'Nunito Sans', sans-serif;
+    font-size: 14px;
+    line-height: 34px;
+    font-weight: 300;
+    
+}
+
+#footer_legal {
+    left: 0;
+    bottom: 0;
+    line-height: 22px;
+    position: absolute;
+    width: 100%;
+    padding: 12px 0 0px;
+    background: rgba(0, 0, 0, .15);
+
+}
+
+a.link {
+    color: inherit;
+    text-decoration: none;
+}
+
+a.link:hover {
+    color: inherit;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.footer_head {
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 22px;
+    font-style: bold;
+}
+
+#wrapper #wrapper2 {
+    position: relative;
+    width: 100%;
+
+}
+
+.bg-div {
+    position: absolute;
+    z-index: -100;
+
+}
+
+.bg-div2 {
+    position: absolute;
+    z-index: -100;
+    right: 0;
+    bottom: 0;
+}
+
+.footer_content {
+    z-index: 100;
+    position: relative;
+    height: 750px;
+    
+}
+
+
+#circle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+    
+}
+
+#square {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+    /* background: pink; */
+}
+
+.contact{
+    width: 4%;
+    margin-left: 10px;
+}
+
+/*list group สีดำๆน่ารักๆ */
+
+.list-group-30{
+    padding-left: 30px; 
+    padding-bottom: 7px;
+}
+
+/* ส่วนของ ol ที่เป็นวงกลมมีตัวเลข */
+.circle-number ol {
+    counter-reset: item;
+    padding-left: 75px;
+    margin: 50px 0;
+    list-style-type: none;
+}
+
+.circle-number ol>li {
+    position: relative;
+}
+
+.circle-number ol>* {
+    margin-bottom: 30px;
+}
+
+.circle-number li {
+    display: list-item;
+    text-align: -webkit-match-parent;
+}
+
+.circle-number ol>li:before {
+    content: counter(item);
+    counter-increment: item;
+    position: absolute;
+    top: -7.5px;
+    left: -75px;
+    padding-top: 7px;
+    min-width: 50px;
+    text-align: center;
+    color: #1b9dff;
+    background: rgba(27, 157, 255, .15);
+    border-radius: 999px;
+    border: 1px solid #1b9dff;
+    width: 50px;
+    height: 50px;
+}
+
+strong {
+    margin: 0px 0px 10px;
+}
+
+ol>li>p {
+    display: block;
+    margin-bottom: 10px;
+    color: #1b9dff;
+    font-size: 24px;
+}
+
+.circle-number li {
+    font-family: Nunito Sans, Arial, sans-serif;
+
+    color: #666666;
+    -webkit-font-feature-settings: "lnum";
+    font-feature-settings: "lnum";
+    font-size: 18px;
+    line-height: 34px;
+    line-height: 2.125rem;
+    float: left;
+    text-align: left;
+
+}
