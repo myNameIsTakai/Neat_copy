@@ -333,76 +333,57 @@ body, html{
     
 }
 
-.bredcrumb-wrapper{
-    margin: 0px 0px 100px;
-    padding: 30px 0px 25px;
-    
-}
-.breadcrumbs--center .breadcrumbs__content {
+/* brdcrumb */
+ul.breadcrumb {
+    padding-top: 30px;
+    padding-bottom:25px;
+    padding-left:0px;
+    padding-right:0px;
+    margin-bottom:100px;
+    list-style: none;
+    background-color: #eee;
     justify-content: center;
     text-align: center;
-}
-.breadcrumbs__content {
-    flex-wrap: wrap;
-    margin-left: -5px;
-    margin-right: -5px;
-    align-items: center;
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-}
-ol{
-    margin: 0;
-    padding: 0;
-    font-family: inherit;
-    font-size: inherit;
-    letter-spacing: inherit;
-    list-style-type: decimal;
-    margin-block-start: 1em;
-    margin-block-end: 1em;
-    margin-inline-start: 0px;
-    margin-inline-end: 0px;
-    padding-inline-start: 40px;
 }
 
-.breadcrumbs__crumb {
-    list-style-type: none;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.breadcrumbs__link {
-    display: block;
-    text-decoration: none;
-    color: #aaa;
-    transition: all .5s cubic-bezier(.215,.61,.355,1);
+ul.breadcrumb li {
+    font-family:'Nunito Sans', sans-serif;
+    display: inline;
+    font-size: 12px;
     font-size: .75rem;
+    line-height: 22px;
     line-height: 1.375rem;
     letter-spacing: .5px;
     font-weight: 700;
-    text-transform: uppercase;
-    font-family: Nunito Sans,Arial,sans-serif;
-    position: relative;
+
 }
 
-.breadcrumbs__icon {
-    display: inline-block;
-    transform: translateY(-1px);
+ul.breadcrumb li+li:before {
+    padding: 10px;
+    color: #AAAAAA;
+    content: ">";
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 22px;
+    line-height: 1.375rem;
+    letter-spacing: .5px;
+    font-weight: 700;
+    font-family: Nunito Sans,Arial,sans-serif;
 }
-.icon--grey {
-    fill: #aaa;
+
+ul.breadcrumb li a {
+    font-family:'Nunito Sans', sans-serif;
+    color: #AAAAAA;
+    text-decoration: none;
 }
-.icon--sm {
-    width: 20px;
-    height: 20px;
+
+ul.breadcrumb li a:hover {
+    font-family:'Nunito Sans', sans-serif;
+    color: #1b9dff;
+    text-decoration: none;
 }
-.icon--block, .icon--block svg {
-    margin: 0 auto;
-}
-.icon svg {
-    display: block;
-    transition: all .5s cubic-bezier(.215,.61,.355,1);
-}
+
+
 
 .capital-letter{
     margin: 30px 20px 30px -5px;
