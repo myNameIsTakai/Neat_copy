@@ -1,0 +1,970 @@
+body, html{
+    /* font-family: 'Nunito',Arial, sans-serif; */
+    float: left;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;   
+}
+/* กำหนดฟ้อนที่ใช้ใน section นี้ */
+.navBar
+{
+    color: white;
+    font-size: 0.75rem;
+    font-family:'Nunito Sans', sans-serif;
+    /* ใช้ relativeแล้วทำให้dropdown ไม่แสดงผล */
+    /* z-index: -2;
+    position: relative; */
+}
+
+/* แถบโปรโมชั่น */
+.alert-bar
+{
+    background-color: #1786D9;
+    text-indent: 2%;
+    padding-top: 0.25%;
+    padding-bottom: 0.25%;
+}
+.alert-bar > p /*ลบ mr ของ p ออก*/
+{
+    margin: 0 0 0;
+}
+
+.breakline /* ตัว br ที่ใช้ในแถบโปรโมชั่น */
+{
+    display: none; 
+}
+
+/* แถบ NavBar */
+.navbar-custom /* Custom Navbar code */
+{
+    font-size: 1rem;
+    background-color: #1B9DFF;
+}
+.nav-item /*ปรับฟ้อนท์ของlist item*/
+{
+    font-size: 0.75em;
+    font-family:'Nunito Sans', sans-serif;
+}
+
+#custom-form /*customize form and button*/
+{
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 0.75rem;
+    color:white;
+    font-weight: bold;
+    border-radius: 40px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #1B9DFF !important;
+    border: white solid 2px;
+}
+/*Dropdown menu section*/
+.dropdown-menu  /*resize dropdown*/
+{
+    width: 810px !important;
+    height: auto !important;
+}
+.dropdown .dropdown-menu /*dropdown animation*/
+{
+    display: block; 
+    opacity: 0;
+    top: 150%;
+    -webkit-transition:all .5s ease;
+    -moz-transition:all .5s ease;
+    -ms-transition:all .5s ease;
+    -o-transition:all .5s ease;
+    transition:all .5s ease;
+    visibility: hidden;
+}
+.dropdown:hover .dropdown-menu /*hover effect*/
+{
+    display: block;
+    opacity: 1;
+    top: 120%;
+    visibility: visible;
+}
+
+/*Card in dropdown*/
+.card-title /*custom card title*/
+{
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-top: 9%;
+}
+.card /*custom card */
+{ 
+    color: #333;
+    font-size: 0.75rem;
+    margin-top: 3%;
+}
+.bottom-list, .bottom-link /*link in location section*/
+{
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-link /*link in location section*/
+{
+    font-size: 0.9rem;
+    margin-right: 5%;
+}
+
+#sst /*position 2-5 List*/
+{
+    margin-left: 2.8rem ;
+}
+
+
+/*ส่วน responsive ของหน้าจอ(จะเอาเหมือนต้องทำใหม่)*/
+@media screen and (max-width: 1400px)
+{
+    .dropdown-menu  /*resize dropdown*/
+    {
+        width: 635px !important;
+        height: auto !important;
+    }
+
+    /* แถบ NavBar */
+    #fst /* 1st List*/
+    {
+        margin-left: 2rem !important;
+    }
+    #sst /* 2-5 List*/
+    {
+       margin-left: 3.5rem;
+       padding-left: 0px !important;
+    }
+    #custom-form /*ปุ่ม get a qoute*/
+    {
+        font-family:'Nunito Sans', sans-serif;
+        font-size: 0.75rem;
+        color:white;
+        font-weight: bold;
+        border-radius: 40px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        background-color: #1B9DFF !important;
+        border: white solid 2px;
+    }
+
+    #position-dp
+    {
+        left: -180% !important;
+    }
+
+    #position-dp-2
+    {
+        left: -296% !important;
+    }
+}
+
+@media screen and (max-width: 576px)
+{
+    .breakline /* ตัว br ที่ใช้ในแถบโปรโมชั่น */
+    {
+        display: inline;
+    }
+}
+
+
+/* background ส่วน Banner */
+.section-banner{
+    background-image: url(https://thisisneat.com.au/wp-content/themes/neat/shared/img/hero-background.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: #1b9dff;
+    height:auto;
+    width:100%;
+    padding: 0px 100px;
+}
+@media only screen and (min-width: 1200px){
+   .grid-wrapper {
+    padding: 0 100px;
+
+} 
+}
+
+.grid-wrapper{
+    margin: 0 120px;
+    padding: 0px 150px;
+
+    
+}
+
+@media only screen and (min-width: 768px){
+   .grid--gutter-lg\@md-up {
+    margin-left: -25px;
+    margin-right: -25px;
+} 
+}
+
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+}
+.grid--gutter-lg\@md-up>:first-child{
+    margin-bottom: 0;
+    align-items: center;
+    justify-content: center;
+}
+@media only screen and (min-width: 992px){
+    .grid--gutter-md\@lg-up {
+    margin-left: -15px;
+    margin-right: -15px;
+}
+}
+@media only screen and (min-width: 992px){
+  .grid--gutter-md\@lg-up>* {
+    padding-left: 15px;
+    padding-right: 15px;
+}  
+}
+@media only screen and (min-width: 992px){
+    .grid--columns-3\@lg-up>* {
+    flex-basis: 25%;
+    max-width: 25%;
+}
+}
+.grid--spacing-lg>*{
+    margin-bottom: 50px;
+}
+
+
+@media only screen and (min-width: 1200px){
+   .col--9\@xl-up {
+    flex-basis: 75%;
+    max-width: 75%;
+}
+ 
+}
+@media only screen and (min-width: 768px){
+  .col--11\@md-up {
+    flex-basis: 91.66667%;
+    max-width: 91.66667%;
+}  
+}
+
+@media only screen and (min-width: 768px){
+    .grid--gutter-lg\@md-up>* {
+    padding-left: 25px;
+    padding-right: 25px;
+}
+}
+
+.grid>*{
+        padding-left: 7.5px;
+        padding-right: 7.5px;
+}
+@media only screen and (min-width: 768px){
+.feature__content {
+    -webkit-transform: none;
+    transform: none;
+}
+}
+.feature__content {
+    flex-direction: column;
+    min-height: 150px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+@media only screen and (min-width: 768px){
+    .feature__heading {
+    -webkit-transform: translateY(-15px);
+    transform: translateY(-15px);
+}
+}
+.feature__content{
+    margin-top: 15px;
+    color: #fff;
+    position: relative;
+    z-index: 2;
+    padding: 60px 0px 75px;
+}
+.feature--center {
+    text-align: center;
+}
+
+@media only screen and (max-width: 1679px) and (min-height: 768px) and (min-width: 992px){
+    .feature__heading {
+    font-size: 48px;
+    font-size: 3rem;
+    line-height: 64px;
+    line-height: 4rem;
+}
+}
+@media only screen and (min-height: 768px) and (min-width: 992px){
+    .feature__heading {
+    font-size: 64px;
+    font-size: 4rem;
+    line-height: 84px;
+    line-height: 5.25rem;
+    font-weight: 200;
+}
+}
+
+.feature__heading {
+    text-align: center;
+    font-family: Nunito Sans,Arial,sans-serif;
+}
+@media only screen and (min-height: 768px) and (min-width: 992px){
+  h1 {
+    font-size: 64px;
+    font-size: 4rem;
+    line-height: 84px;
+    line-height: 5.25rem;
+}  
+}
+.feature__description {
+    font-style: italic;
+    font-family: Georgia,Times,Times New Roman,serif;
+    text-align: center;
+    font-size: 18px;
+    font-weight: 300;
+}
+
+
+/* brdcrumb */
+.breadcrumb{
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding: 30px 0px 25px;
+}
+ul.breadcrumb {
+    padding-top: 30px;
+    padding-bottom:25px;
+    padding-left:0px;
+    padding-right:0px;
+    margin-bottom:100px;
+    list-style: none;
+    background-color: #eee;
+    justify-content: center;
+    text-align: center;
+}
+
+ul.breadcrumb li {
+    font-family:'Nunito Sans', sans-serif;
+    display: inline;
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 22px;
+    line-height: 1.375rem;
+    letter-spacing: .5px;
+    font-weight: 700;
+    text-transform: uppercase;
+
+}
+
+ul.breadcrumb li+li:before {
+    padding: 10px;
+    color: #AAAAAA;
+    content: ">";
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 22px;
+    line-height: 1.375rem;
+    letter-spacing: .5px;
+    font-weight: 700;
+    font-family: Nunito Sans,Arial,sans-serif;
+}
+
+ul.breadcrumb li a {
+    font-family:'Nunito Sans', sans-serif;
+    color: #AAAAAA;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    font-family:'Nunito Sans', sans-serif;
+    color: #1b9dff;
+    text-decoration: none;
+}
+
+/* card */
+.grid--justify-center {
+    justify-content: center;
+}
+.grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+.col {
+    width: 100%;
+    flex-basis: 100%;
+    position: relative;
+}
+.grid>*{
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+@media only screen and (min-width: 992px){
+   .card {
+    transition-delay: .2s;
+    } 
+}
+@media only screen and (min-width: 992px){
+   .card--column\@lg-up {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+    align-items: flex-start;
+    }
+ 
+}
+.cards:hover{
+    cursor:pointer;
+
+}
+
+@media only screen and (min-width: 768px){
+    .card--row\@md-up {
+    display: flex;
+    flex-direction: row;
+    align-items: normal;
+    }
+}
+
+.card {
+    border-radius: 10px !important;
+    transition-delay: 0ms;
+    opacity: 1;
+    transform: translateY(0);
+    position: relative;
+    background: #fff;
+    height: 100%;
+    box-shadow: 0 15px 25px rgba(0,0,0,.15), 0 0 1px rgba(0,0,0,.15);
+}
+
+@media only screen and (min-width: 992px){
+  .card--column\@lg-up .card__image{
+    flex-basis: auto;
+    }  
+}
+
+.card>.card__image{
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+.card__image{
+    position: relative;
+    width: 100%;
+    z-index: 0;
+}
+@media only screen and (min-width: 992px){
+   .image--lazy-1 {
+    transition-delay: 0ms;
+    } 
+}
+.image {
+    display: inline-block;
+   
+}
+@media only screen and (min-width: 992px){
+   .card--column\@lg-up .card__image img {
+    height: auto;
+    }
+}
+@media only screen and (min-width: 768px){
+   .card--row\@md-up .card__image img {
+    font-family: "object-fit:cover";
+    object-fit: cover;
+    max-width: none;
+    } 
+}
+.card__image img{
+    width: 100%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+img {
+    display: block;
+    margin: 0 auto;
+    border: 0;
+    min-height: 1px;
+}
+.card>.card__content {
+    padding: 30px;
+}
+@media only screen and (min-width: 992px){
+    .card--column\@lg-up>.card__content {
+    flex-basis: auto;
+    }
+}
+@media only screen and (min-width: 768px){
+   .card--row\@md-up>.card__content {
+    flex-basis: 50%;
+    } 
+}
+
+.card>.card__content {
+    padding: 30px;
+}
+.card>.card__content {
+    position: relative;
+    width: 100%;
+    flex: 1;
+    z-index: 1;
+    overflow: hidden;
+}
+.card>.card__content{
+    align-items: flex-start;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: nowrap;
+}
+.link--unstyled {
+    text-decoration: none;
+}
+.heading--styled.heading--h4{
+    font-size: 24px;
+    font-size: 1.5rem;
+    line-height: 34px;
+    line-height: 2.125rem;
+    letter-spacing: .5px;
+    font-weight: 300;
+    font-family: Nunito Sans,Arial,sans-serif;
+    text-transform: none;
+    color: #333;
+}
+
+@media only screen and (min-height: 768px) and (min-width: 992px){
+    h4 {
+    margin-bottom: 10px;
+    }
+}
+.card__copy {
+    margin-bottom: 20px;
+    font-size: 15px;
+    font-size: .9375rem;
+    line-height: 28px;
+    line-height: 1.75rem;
+    letter-spacing: .5px;
+    color: #666;
+    font-weight: 300;   
+}
+.copy {
+    display: block;
+}
+
+
+.card__button {
+    margin-top: auto;
+    margin-left: -30px;
+}
+.button {
+    text-decoration: none;
+    border-radius: 999px;
+    
+    display: inline-block;
+    color: #1b9dff;
+}
+
+.button__content {
+    display: block;
+    border-radius: 999px;
+   
+}
+.card__button .button__copy {
+    padding: 10px 30px;
+    text-transform: uppercase;
+    font-family: Nunito Sans,Arial,sans-serif;
+}
+@media only screen and (min-width: 576px){
+   .button__copy {
+    max-width: none;
+    }
+}
+.button__copy {
+    position: relative;
+    color: inherit;
+    text-align: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 700;
+    
+}
+.icon-wrapper {
+    display: block;
+}
+.icon--block {
+    display: block;
+    margin: 0 auto;
+}
+.button__icon{
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
+    fill: #1b9dff;
+    margin-left: 15px;
+    display: block;
+    margin: 15 auto;
+}
+
+/* footer */
+.section__footer--overflow {
+    overflow: hidden;
+}
+
+@media only screen and (min-height: 768px) and (min-width: 992px){
+   .section__footer--padding {
+    padding: 150px 0;
+    } 
+}
+
+.section__footer--padding {
+    margin-bottom: 0;
+    padding: 50px 0;
+}
+/* @media only screen and (min-height: 768px) and (min-width: 992px){
+   .section__footer--margin {
+    margin-bottom: 150px;
+    } 
+} */
+.section__footer--margin{
+    margin-top: 120px;
+}
+.section__footer {
+    position: relative;
+}
+
+/* กำหนดดสีพื้นหลัง */
+.section__footer--color-darkest-grey {
+    background: #333;
+}
+
+.section__footer__content>*{
+    margin-bottom: 100px;
+
+}
+
+/* กำหนดความทึบlogo */
+.icon--opacity-high {
+    opacity: .075;
+}
+.icon--block, .icon--block svg{
+    display: block;
+    margin: 0 auto;
+}
+
+/* กำหนดาสีฟ้อน */
+.footer{
+    color: #fff;
+}
+
+
+@media only screen and (min-width: 1680px){
+  .grid__footer-wrapper {
+    padding: 0 150px;
+    max-width: 1680px;
+    }  
+}
+@media only screen and (min-width: 1200px){
+    .grid__footer-wrapper {
+    padding: 0 100px;
+    }
+}
+@media only screen and (max-width: 575px){
+    .grid__footer-wrapper {
+    padding-left: 25px;
+    padding-right: 25px;
+    }
+}
+
+.grid__footer-wrapper {
+    margin: 0 auto;
+    padding: 0 200px;
+}
+.grid__footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+.grid__footer--gutter-lg{
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+@media only screen and (min-width: 768px){
+   .col--4\@md-up {
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+    } 
+}
+.grid__footer--gutter-lg>*{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* ส่วนของ logo neat */
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.icon--white {
+    fill: #fff;
+}
+
+
+.footer__byline{
+    margin-bottom: 30px;
+    display: block;
+}
+/* กำหนดขนาดฟ้อนให้ tag small */
+small {
+    font-weight: 300;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 22px;
+    line-height: 1.375rem;
+    letter-spacing: .5px;
+}
+
+.grid__footer ul.grid__footer, .list{
+    list-style-type: none;
+}
+
+/* ทำให้เรียงเป็นrowเดียวกันในแถบสีทึบข้างล่าง */
+.list--inline .list__item {
+    display: inline-flex;
+}
+
+.grid__footer>*{
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+/* กำหนดขนาด icon */
+.icon--sm {
+    width: 20px;
+    height: 20px;
+}
+
+@media only screen and (min-width: 768px){
+    .col--7\@md-up {
+    flex-basis: 58.33333%;
+    max-width: 58.33333%;
+    }
+    .col--offset-1\@md-up {
+        margin-left: 8.33333%;
+    }
+}
+@media only screen and (min-width: 992px){
+    .grid__footer--spacing-none\@lg-up>*{
+        margin-bottom: 0;
+    }
+}
+
+/* กำหนดฟ้อนที่มีการลิ้ง */
+.footer__links {
+    line-height: 34px;
+    font-size: 14px;
+    font-size: .875rem;
+    letter-spacing: .5px;
+}
+
+/* ขีดเส้นใต้ให้หัวข้อ */
+.footer__category {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsla(0,0%,100%,.25);
+}
+/* กำหนดขนาดฟ้อนหัวข้อ */
+.heading--tiny{
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 22px;
+    line-height: 1.375rem;
+    letter-spacing: .5px;
+    font-weight: 700;
+    font-family: Nunito Sans,Arial,sans-serif;
+    text-transform: uppercase;
+}
+.footer__copy>:last-child{
+    margin-bottom: 0;
+}
+/* ทำให้ข้อความที่มีการลิ้งเป็นเหมือนฟ้อนธรรมดา และ เป็นรูปมือเวลา hover */
+.footer__copy a , .footer__terms a, .footer__copy a:hover{
+    font-family: Nunito Sans,Arial,sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+.link, .link:hover {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/* แถบทึบด้านล่างสุด */
+.footer__legal {
+    width: 100%;
+    padding: 10px 0 7.5px;
+    background: rgba(0,0,0,.15);
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 22px;
+    line-height: 1.375rem;
+    letter-spacing: .5px;
+    font-weight: 300;
+}
+
+/* ปรับขนาด icon social */
+.contact{
+    width: 4%;
+    margin-left: 10px;
+    position: relative;
+}
+
+/* SVG วงกลมกับสี่เหลี่ยมที่เป็นพื้นหลัง */
+
+#wrapper-circle{
+    z-index: -100;
+}
+
+/* svgวงกลม */
+#circle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+ 
+}
+/* svgสี่เหลี่ยม */
+#square {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+/* เพิ่ม space ระหว่าาง item */
+.grid__footer--justify-space-between {
+    justify-content: space-between;
+}
+/* จัดให้อยุ่ตรงกลาง */
+.grid__footer--align-center {
+    align-items: center;
+}
+
+@media only screen and (min-width: 576px){
+    .grid__footer--spacing-none\@sm-up>*{
+        margin-bottom: 0;
+    }
+}
+
+.footer__terms>:last-child{
+    margin-bottom: 0;
+}
+
+.list__footer--gutter-sm{
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+.list__footer--gutter-sm>*{
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+@media only screen and (min-width: 992px){
+    .grid__footer--spacing-none\@lg-up>*, .grid--spacing-none\@lg-up>:last-child{
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 576px){
+    .footer__legal {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    }
+}
+@media only screen and (min-width: 768px){
+    .footer__links {
+    margin-top: 70px;
+    }
+
+}
+@media only screen and (min-width: 1680px){
+    .grid__footer--gutter-xl\@xxl-up {
+    margin-left: -37.5px;
+    margin-right: -37.5px;
+    }
+}
+@media only screen and (min-width: 576px){
+    .grid__footer--gutter-lg\@sm-up {
+    margin-left: -25px;
+    margin-right: -25px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .grid__footer--justify-flex-end\@md-up {
+    justify-content: flex-end;
+    }
+}
+
+
+@media only screen and (min-width: 1680px){
+    .grid__footer--gutter-xl\@xxl-up>* {
+    padding-left: 37.5px;
+    padding-right: 37.5px;
+    }
+}
+@media only screen and (min-width: 576px){
+  .grid__footer--gutter-lg\@sm-up>* {
+    padding-left: 25px;
+    padding-right: 25px;
+    }  
+}
+
+@media only screen and (min-width: 1200px){
+    .grid__footer--columns-auto\@xl-up>* {
+    flex-basis: auto;
+    max-width: none;
+    }
+}
+@media only screen and (min-width: 576px){
+    .grid__footer--columns-auto\@sm-up>* {
+    flex-basis: auto;
+    max-width: none;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .grid__footer--columns-equal\@md-up>* {
+    flex: 1 1 auto;
+    }
+}
+
+
+html {
+    text-size-adjust: 100%;
+}
+
+body {
+    font-family: Nunito Sans,Arial,sans-serif;
+    font-weight: 300;
+    color: #666;
+    -webkit-font-feature-settings: "lnum";
+    font-feature-settings: "lnum";
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 34px;
+    line-height: 2.125rem;
+    overflow-x: hidden;
+}
