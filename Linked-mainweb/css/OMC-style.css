@@ -619,12 +619,16 @@ a.link:hover {
     margin-left: 10px;
 }
 
+
+
+
 /*list group สีดำๆน่ารักๆ */
 
 .list-group-30{
     padding-left: 30px; 
     padding-bottom: 7px;
 }
+
 
 /* ส่วนของ ol ที่เป็นวงกลมมีตัวเลข */
 .circle-number ol {
