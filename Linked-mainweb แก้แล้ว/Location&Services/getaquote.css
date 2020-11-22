@@ -1,0 +1,276 @@
+
+/* style เพิ่มเติม ของ Get a Quote */
+
+/* .faluk{
+    padding-left: 26.25%;
+    padding-right: 26.25%;
+    width: 100%;
+    height: auto;
+} */
+
+.card-header-mystyle{
+    font-family: 'Nunito', sans-serif;
+    font-size:48px;
+    /* font-weight: lighter; */
+    color:#333333;
+    text-align: center;
+}
+
+.card-content{
+    font-family: 'Nunito', sans-serif;
+    font-size:24px;
+    font-weight: lighter;
+    color:#333333;
+    text-align: center;
+}
+
+.card-selection{
+    font-family: 'Nunito', sans-serif;
+    font-size:24px;
+    color:#333333;
+}
+
+.card-selection-lighter{
+    font-family: 'Nunito', sans-serif;
+    font-size:14px;
+    font-weight: lighter;
+    color:#666666;
+    padding-right:30px;
+}
+
+.highlight{
+    background: linear-gradient(to top, yellow 50%, transparent 50%);
+    margin:0px;
+}
+
+.font-info{
+    font-size:18px;
+    font-family: 'Nunito', sans-serif;
+}
+
+/* .radio{
+    position: relative;
+    cursor: pointer;
+    -webkit-tap-highlight-color: transparent;
+}
+
+.radio-input{
+    opacity: 0px !important;
+    display: inline-blocks;
+    padding: 0px;
+}
+
+.form-property{
+    box-sizing: inherit;
+}
+
+.from-field{
+    display: block;
+    font-weight:300;
+    padding: 5px 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background:white;
+    
+} */
+
+.faluk-from{
+    padding-left: 10px;
+    padding-right: 25px;
+    font-size:15px;
+    font-family: 'Nunito', sans-serif;
+    color: #666666;
+    font-weight: 1;
+    cursor: pointer;
+
+}
+
+
+/*Style form button*/
+
+#minus
+{
+    width: 37.65px;
+    background-color: #FEFEFE;
+    color: black;
+    border: solid #E3E3E3 0.5px;
+    font-size: smaller;
+}
+
+#shownum
+{
+    background-color: #FEFEFE !important; 
+    border: solid #E3E3E3 0.5px !important;
+    color: black !important;
+    font-size: 16px !important;
+}
+
+#shownum2
+{
+    background-color: #FEFEFE !important; 
+    border: solid #E3E3E3 0.5px !important;
+    color: black !important;
+    font-size: 16px !important;
+}
+
+#shownum3
+{
+    background-color: #FEFEFE !important; 
+    border: solid #E3E3E3 0.5px !important;
+    color: black !important;
+    font-size: 16px !important;
+}
+
+#shownum4
+{
+    background-color: #FEFEFE !important; 
+    border: solid #E3E3E3 0.5px !important;
+    color: black !important;
+    font-size: 16px !important;
+}
+
+#shownum5
+{
+    background-color: #FEFEFE !important; 
+    border: solid #E3E3E3 0.5px !important;
+    color: black !important;
+    font-size: 16px !important;
+}
+
+#shownum6
+{
+    background-color: #FEFEFE !important; 
+    border: solid #E3E3E3 0.5px !important;
+    color: black !important;
+    font-size: 16px !important;
+}
+
+#shownum7
+{
+    background-color: #FEFEFE !important; 
+    border: solid #E3E3E3 0.5px !important;
+    color: black !important;
+    font-size: 16px !important;
+}
+
+#shownum8
+{
+    background-color: #FEFEFE !important; 
+    border: solid #E3E3E3 0.5px !important;
+    color: black !important;
+    font-size: 16px !important;
+}
+#plus
+{
+    background-color: #FEFEFE;
+    color: black;
+    border: solid #E3E3E3 0.5px;
+    font-size: smaller;
+}
+
+#hover-item
+{
+    padding-left: 14.5%;
+    margin-top: 15%;
+    margin-bottom: 22.5%;
+    display:none;
+}
+
+#hover-item2
+{
+    padding-left: 14.5%;
+    margin-top: 18%;
+    margin-bottom: 22.5%;
+    display:none;
+}
+
+.sidebar {
+    height: 100%;
+    width: 0;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    background-color: white;
+    overflow-x: hidden;
+    transition: 0.5s;
+    padding-top: 20px;
+    border: 1px solid black;
+}
+
+
+
+.sidebar a:hover {
+    color: #f1f1f1;
+} */
+
+.sidebar{
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+}
+
+.closebtn{
+    width:80%;
+}
+
+.openbtn {
+    font-size: 14px;
+    cursor: pointer;
+    background-color: #1B9DFF;
+    width:30%;
+    color: white;
+    padding: 10px 15px;
+    border: none;
+    border-radius: 25px;
+    
+}
+
+/* .openbtn:hover {
+    background-color: #444;
+} */
+
+#main {
+    transition: margin-left .5s;
+    padding-top: 50px;
+    /* padding-left:20%;
+    padding-right:20%; */
+    text-align: center;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+    .sidebar {
+        padding-top: 15px;
+    }
+
+    .sidebar a {
+        font-size: 18px;
+    }
+}
+
+.img-in-box{
+    width:auto;
+    height:auto;
+    margin-left: 30%;
+    margin-top:10%
+}
+
+.body_card{
+    margin:0px;
+}
+
+/* form */
+.font-sizebar{
+    font-size:36px;
+    color:#333333;
+    font-family: 'Nunito', sans-serif;
+}
+
+.font-sizeinfo{
+    font-size:11px;
+    color:#333333;
+    font-family: 'Nunito', sans-serif;
+}

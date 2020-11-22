@@ -1,0 +1,58 @@
+body{
+    font-family: 'Nunito Sans', sans-serif;
+}
+.font-homepage{
+    text-align: center;
+}
+
+.card-body{
+    width:100%;
+    float: left;
+    /* padding-left:30px;
+    padding-right:30px; */
+    position: relative;
+}
+.card{
+    height:100%;
+    position: static;
+}
+.card-header{
+    color: #333333;
+    font-size: 24px;
+}
+
+.info-card-head{
+    color: #666666;
+    font-size: 15px;
+}
+
+@media screen and (max-width: 1200px){
+    .faluk{
+        padding-left:2%;   
+        padding-left:2%; 
+    }
+    
+}
+
+@media screen and (min-width: 1700px){
+    .faluk{
+        padding-left:15%;   
+        padding-right:15%;  
+    }
+    
+}
+
+@media screen and (max-width: 1700px){
+    .faluk{
+        padding-left:6%;   
+        padding-right:6%;  
+    }
+    
+}
+
+.block{
+    height: 15vh;
+}
+
+
+

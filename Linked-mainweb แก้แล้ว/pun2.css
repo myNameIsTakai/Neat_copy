@@ -1,0 +1,1056 @@
+/* Q&A2 */
+
+/* ตัวสูตรของเว็บ */
+.formula {
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+}
+.formula__term {
+    max-width: 33%;
+}
+@media only screen and (min-width: 768px){
+  .grid--gutter-md\@md-up {
+    margin-left: -15px;
+    margin-right: -15px;
+    }  
+}
+@media only screen and (min-width: 576px){
+    .grid--wrap-no-wrap\@sm-up {
+    flex-wrap: nowrap;
+    }
+}
+/* กำหนดฟ้องให้เป็นสีฟ้า */
+.heading--blue {
+    color: #1b9dff;
+}
+.heading{
+    font-family: Nunito Sans,Arial,sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+ h6 {
+    margin-bottom: 2.5px;
+
+}
+@media only screen and (min-width: 576px){
+    .infomation .formula {
+    margin: 75px 0;
+    }
+}
+
+.infomation .formula {
+    margin: 75px 0;
+    }
+/* ฟ้องในตัวสูตรของเว็บ */
+.formula__caption {
+    display: block;
+    font-family: Nunito Sans,Arial,sans-serif;
+    color: #666666;
+    font-size: 14px;
+    line-height: 22px;
+}
+/* เครื่องหมายคุณ */
+.formula__operation {
+    font-size: 48px;
+    font-weight: 200;
+    opacity: .25;
+}
+@media only screen and (min-width: 768px){
+    .grid--gutter-md\@md-up>* {
+    padding-left: 15px;
+    padding-right: 15px;
+}
+}
+@media only screen and (min-width: 576px){
+    .grid--columns-auto\@sm-up>* {
+    flex-basis: auto;
+    max-width: none;
+    }
+}
+
+@media only screen and (min-width: 576px){
+   .grid--wrap-no-wrap\@sm-up {
+    flex-wrap: nowrap;
+} 
+}
+.grid{
+    display: flex;
+}
+
+body, html{
+    /* font-family: 'Nunito',Arial, sans-serif; */
+    float: left;
+    margin: 0px;
+    width: 100%;
+    height: 100%;
+    padding: 0px;   
+}
+/* กำหนดฟ้อนที่ใช้ใน section นี้ */
+.navBar
+{
+    color: white;
+    font-size: 0.75rem;
+    font-family:'Nunito Sans', sans-serif;
+    /* ใช้ relativeแล้วทำให้dropdown ไม่แสดงผล */
+    /* z-index: -2;
+    position: relative; */
+}
+
+/* แถบโปรโมชั่น */
+.alert-bar
+{
+    background-color: #1786D9;
+    text-indent: 2%;
+    padding-top: 0.25%;
+    padding-bottom: 0.25%;
+}
+.alert-bar > p /*ลบ mr ของ p ออก*/
+{
+    margin: 0 0 0;
+}
+
+.breakline /* ตัว br ที่ใช้ในแถบโปรโมชั่น */
+{
+    display: none; 
+}
+
+/* แถบ NavBar */
+.navbar-custom /* Custom Navbar code */
+{
+    font-size: 1rem;
+    background-color: #1B9DFF;
+}
+.nav-item /*ปรับฟ้อนท์ของlist item*/
+{
+    font-size: 0.75em;
+    font-family:'Nunito Sans', sans-serif;
+}
+
+#custom-form /*customize form and button*/
+{
+    font-family:'Nunito Sans', sans-serif;
+    font-size: 0.75rem;
+    color:white;
+    font-weight: bold;
+    border-radius: 40px;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+    background-color: #1B9DFF !important;
+    border: white solid 2px;
+}
+/*Dropdown menu section*/
+.dropdown-menu  /*resize dropdown*/
+{
+    width: 810px !important;
+    height: auto !important;
+}
+.dropdown .dropdown-menu /*dropdown animation*/
+{
+    display: block; 
+    opacity: 0;
+    top: 150%;
+    -webkit-transition:all .5s ease;
+    -moz-transition:all .5s ease;
+    -ms-transition:all .5s ease;
+    -o-transition:all .5s ease;
+    transition:all .5s ease;
+    visibility: hidden;
+}
+.dropdown:hover .dropdown-menu /*hover effect*/
+{
+    display: block;
+    opacity: 1;
+    top: 120%;
+    visibility: visible;
+}
+
+/*Card in dropdown*/
+.card-title /*custom card title*/
+{
+    font-size: 0.75rem;
+    font-weight: bold;
+    margin-top: 9%;
+}
+.card /*custom card */
+{ 
+    color: #333;
+    font-size: 0.75rem;
+    margin-top: 3%;
+}
+.bottom-list, .bottom-link /*link in location section*/
+{
+    display: inline;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+.bottom-link /*link in location section*/
+{
+    font-size: 0.9rem;
+    margin-right: 5%;
+}
+
+#sst /*position 2-5 List*/
+{
+    margin-left: 2.8rem ;
+}
+
+
+/*ส่วน responsive ของหน้าจอ(จะเอาเหมือนต้องทำใหม่)*/
+@media screen and (max-width: 1400px)
+{
+    .dropdown-menu  /*resize dropdown*/
+    {
+        width: 635px !important;
+        height: auto !important;
+    }
+
+    /* แถบ NavBar */
+    #fst /* 1st List*/
+    {
+        margin-left: 2rem !important;
+    }
+    #sst /* 2-5 List*/
+    {
+       margin-left: 3.5rem;
+       padding-left: 0px !important;
+    }
+    #custom-form /*ปุ่ม get a qoute*/
+    {
+        font-family:'Nunito Sans', sans-serif;
+        font-size: 0.75rem;
+        color:white;
+        font-weight: bold;
+        border-radius: 40px;
+        padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
+        padding-left: 1.5rem;
+        padding-right: 1.5rem;
+        background-color: #1B9DFF !important;
+        border: white solid 2px;
+    }
+
+    #position-dp
+    {
+        left: -180% !important;
+    }
+
+    #position-dp-2
+    {
+        left: -296% !important;
+    }
+}
+
+@media screen and (max-width: 576px)
+{
+    .breakline /* ตัว br ที่ใช้ในแถบโปรโมชั่น */
+    {
+        display: inline;
+    }
+}
+
+
+/* background ส่วน Banner */
+.section-banner{
+    background-image: url(https://thisisneat.com.au/wp-content/themes/neat/shared/img/hero-background.svg);
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    background-color: #1b9dff;
+    height:auto;
+    width:100%;
+    padding: 0px 100px;
+}
+
+.section-padding{
+    padding-top: 40px;
+}
+/* @media screen and (max-width:992px){
+    .section-banner{
+    background-color: #1b9dff;
+    height:50%;
+    width:100%;
+    }s
+} */
+
+/* ฟ้อนส่วน banner */
+@media screen and (min-width:1679px){
+    .banner-head-font{
+        font-family:'Nunito Sans', sans-serif;
+        color: white;
+        font-size: 64px;
+        text-align: center;
+        font-weight: 200;
+    }
+}
+@media screen and (max-width:1679px){
+    .banner-head-font{
+        font-family:'Nunito Sans', sans-serif;
+        color: white;
+        font-size: 48px;
+        text-align: center;
+        font-weight: 200;
+    }
+}
+
+@media screen and (max-width:992px){
+    .banner-head-font{
+        font-family:'Nunito Sans', sans-serif;
+        color: white;
+        font-size: 36px;
+        text-align: center;
+    }
+}
+.text-link:link {
+    text-decoration: underline;
+    color: #1b9dff;
+    font-weight: 300;
+}
+.banner-head-feature{
+    font-family:'Nunito Sans', sans-serif;
+    color:white;
+    font-size: 18px;
+    text-align: center;
+}
+
+.banner-neatTeam{
+    font-style: italic;
+    font-family: Georgia,Times,Times New Roman,serif;
+    display: block;
+    font-weight: 300;
+    line-height: 1.375rem;
+    letter-spacing: .5px;
+    font-size: .875rem;
+    color: white;
+    margin-bottom: 75px;
+    text-align: center;
+    -webkit-font-smoothing: antialiased;
+    
+}
+
+/* breadcrumbs */
+ul.breadcrumb {
+    padding-top: 30px;
+    padding-bottom:25px;
+    padding-left:0px;
+    padding-right:0px;
+    margin-bottom:100px;
+    list-style: none;
+    background-color: #eee;
+}
+
+ul.breadcrumb li {
+    font-family:'Nunito Sans', sans-serif;
+    display: inline;
+    font-size: 12px;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 10px;
+    color: #AAAAAA;
+    content: ">";
+}
+
+ul.breadcrumb li a {
+    font-family:'Nunito Sans', sans-serif;
+    color: #AAAAAA;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    font-family:'Nunito Sans', sans-serif;
+    color: #1b9dff;
+    text-decoration: none;
+}
+
+.capital-letter{
+    margin: 30px 20px 30px -5px;
+    
+}
+
+.fletter::first-letter { 
+    float: left; 
+    color: #1b9dff;
+    font-size: 140px; 
+    font-weight: 200;
+    line-height: 70px;
+    text-align: left;
+    font-family:'Nunito Sans', sans-serif;
+    margin: 15px 20px 10px -5px;
+  
+}
+
+.font-w300{
+    font-family: Nunito Sans,Arial,sans-serif;
+    font-weight: 300;
+    color: #666666;
+    -webkit-font-feature-settings: "lnum";
+    font-feature-settings: "lnum";
+    font-size: 18px;
+    line-height: 34px;
+    line-height: 2.125rem;
+    float: left;
+    text-align: left;
+}
+.font-w300-blue{
+    font-family: Nunito Sans,Arial,sans-serif;
+    font-weight: 300;
+    color: #1b9dff;
+    -webkit-font-feature-settings: "lnum";
+    font-feature-settings: "lnum";
+    font-size: 24px;
+    line-height: 34px;
+    float: left;
+    text-align: left;
+}
+.grid-jutify-center{
+    justify-content: center;
+    text-align: center;
+}
+.section-content-wrapper{
+    margin: 0 0 30px;
+    padding: 0 100px;
+}
+@media only screen and (min-width: 1200px){
+    .col--9\@xl-up {
+     flex-basis: 75%;
+     max-width: 75%;
+ } 
+ }
+ @media only screen and (min-width: 992px){
+   .col--10\@lg-up {
+     flex-basis: 83.33333%;
+     max-width: 83.33333%;
+     }  
+ }
+ .col {
+     width: 100%;
+     flex-basis: 100%;
+     position: relative;
+     min-height: 1px;
+     padding-right: 15px;
+     padding-left: 15px;
+ }
+ 
+ .grid{
+     width: 97%;
+     margin-left: auto;
+     margin-right: auto;
+ }
+ 
+ .heading--h2{
+     font-weight: 200;
+     margin: 75px 0px 30px;
+     border-bottom: 1px solid #ddd;
+     font-family: Nunito Sans,Arial,sans-serif;
+     font-size: 48px;
+     line-height: 64px;
+     text-align: left;
+     color: #1b9dff;
+ }
+ 
+ 
+ .wp-block-image {
+     display: block;
+     height: auto;
+     max-width: 100%;
+     border: 0;
+     min-height: 1px;
+     margin: auto;
+     margin-bottom: 50px ;
+ }
+
+ .infomation > li{
+    font-weight: bold;
+}
+
+.infomation h4{
+    color: #1b9dff;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 34px;
+    text-align: left;
+    letter-spacing: .5px;
+    margin: 50px 0px 20px;
+}
+.font-w200{
+    color: #1b9dff;
+    font-weight: 200;
+    font-size: 36px;
+    line-height: 48px;
+    text-align: left;
+    letter-spacing: .5px;
+    margin: 50px 0px 20px;
+}
+
+.infomation .table, .infomation .wp-block-table {
+    table-layout: fixed;
+    width: 100%;
+    margin: 50px 0;
+}
+
+.table th, .wp-block-table th {
+    font-weight: 300;
+}
+.infomation ul> li:before{
+    position: absolute;
+    left: -45px;
+    top: 15px;
+    border-radius: 50%;
+    width: 5px;
+    height: 5px;
+    content: "";
+    display: block;
+}
+
+/* ส่วนการ์ด */
+.font-homepage{
+    text-align: center;
+}
+
+.card-body{
+    width:100%;
+    float: left;
+    /* padding-left:30px;
+    padding-right:30px; */
+    position: relative;
+    font-family: 'Nunito Sans', sans-serif
+}
+.card{
+    height:100%;
+    position: static;
+}
+.card-head{
+    color: #333333;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: 0.5px;
+
+}
+
+.info-card-head{
+    color: #666666;
+    font-size: 15px;
+    line-height: 25px;
+    letter-spacing: 0.5px;
+}
+
+
+/* Card responsive */
+@media screen and (max-width:1200px){
+    .faluk{
+        padding-left:3%;   
+        padding-left:3%; 
+    }
+    
+}
+
+@media screen and (min-width: 1679px){
+    .faluk{
+        padding-left:15%;   
+        padding-right:15%;  
+    }
+}
+
+@media screen and (max-width: 1679px){
+    .faluk{
+        padding-left:6%;   
+        padding-right:6%;  
+    }
+    
+}
+.block{
+    height: 15vh;
+}
+
+
+figure{
+    padding: 0;
+    font-family: inherit;
+    font-size: inherit;
+    letter-spacing: inherit;
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 40px;
+    margin-inline-end: 40px;
+}
+
+img {
+    display: block;
+    height: auto;
+    max-width: 100%;
+    margin: 0 auto;
+    border: 0;
+    min-height: 1px;
+}
+/* ส่วน The near team profile */
+/* กำหนด padding margin และ ทำเส้นข้างบน */
+.single__profile {
+    margin-left: 70px;
+    margin-right: 70px;
+    border-top: 1px solid #ddd;
+    margin-top: 50px;
+    padding-top: 50px;
+}
+.image--center {
+    display: block;
+}
+/* อนิเมของรูป */
+.image {
+    transition: all 1s cubic-bezier(.215,.61,.355,1) .2s;
+}
+.profile__author{
+    padding-left: 15px;
+    padding-right: 15px;   
+} 
+
+/* css ของตารางที่สลับสี */
+.td-block > h4{
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: .5px;
+    font-weight: 300;
+    font-family: Nunito Sans,Arial,sans-serif;
+}
+.td-block >h6{
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 22px;
+    line-height: 1.375rem;
+    font-weight: 300;
+    letter-spacing: .5px;
+    font-weight: 700;
+    opacity: 1;
+    display: block;
+    font-family: Nunito Sans,Arial,sans-serif;
+    text-transform: uppercase;
+}
+.td-block > p{
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: .5px;
+    font-family: Nunito Sans,Arial,sans-serif;
+    font-weight: 300;
+    color: #666;
+}
+
+.table-bordered, .wp-block-table {
+    border-left: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+}
+td {
+    display: table-cell;
+    vertical-align: inherit;
+    padding: 5px;
+}
+th{
+    padding: 20px;
+}
+table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+.table-grey{
+    background-color: #fafafa;
+
+}
+.table-heading{
+    color: #333;
+    font-size: 24px;
+    line-height: 34px;
+    letter-spacing: .5px;
+    font-weight: 300;
+    font-family: Nunito Sans,Arial,sans-serif;
+    text-transform: none;
+    padding: 20px !important;
+}
+.table small{
+    display: block;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: .5px;
+    font-family: Nunito Sans,Arial,sans-serif;
+}
+.table td{
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 22px;
+    letter-spacing: .5px;
+    font-family: Nunito Sans,Arial,sans-serif;
+    color: #666666;
+    text-align: left;
+    padding: 20px !important;
+}
+
+
+
+/* footer */
+html {
+    text-size-adjust: 100%;
+}
+
+body {
+    font-family: Nunito Sans,Arial,sans-serif;
+    font-weight: 300;
+    color: #666;
+    -webkit-font-feature-settings: "lnum";
+    font-feature-settings: "lnum";
+    font-size: 18px;
+    font-size: 1.125rem;
+    line-height: 34px;
+    line-height: 2.125rem;
+    overflow-x: hidden;
+}
+.section__footer--overflow {
+    overflow: hidden;
+}
+
+@media only screen and (min-height: 768px) and (min-width: 992px){
+   .section__footer--padding {
+    padding: 150px 0;
+    } 
+}
+
+.section__footer--padding {
+    margin-bottom: 0;
+    padding: 50px 0;
+}
+/* @media only screen and (min-height: 768px) and (min-width: 992px){
+   .section__footer--margin {
+    margin-bottom: 150px;
+    } 
+} */
+.section__footer--margin{
+    margin-top: 120px;
+}
+.section__footer {
+    position: relative;
+}
+
+/* กำหนดดสีพื้นหลัง */
+.section__footer--color-darkest-grey {
+    background: #333;
+}
+
+.section__footer__content>*{
+    margin-bottom: 100px;
+
+}
+
+/* กำหนดความทึบlogo */
+.icon--opacity-high {
+    opacity: .075;
+}
+.icon--block, .icon--block svg{
+    display: block;
+    margin: 0 auto;
+}
+
+/* กำหนดาสีฟ้อน */
+.footer{
+    color: #fff;
+}
+
+
+@media only screen and (min-width: 1680px){
+  .grid__footer-wrapper {
+    padding: 0 150px;
+    max-width: 1680px;
+    }  
+}
+@media only screen and (min-width: 1200px){
+    .grid__footer-wrapper {
+    padding: 0 100px;
+    }
+}
+@media only screen and (max-width: 575px){
+    .grid__footer-wrapper {
+    padding-left: 25px;
+    padding-right: 25px;
+    }
+}
+
+.grid__footer-wrapper {
+    margin: 0 auto;
+    padding: 0 200px;
+}
+.grid__footer {
+    display: flex;
+    flex-wrap: wrap;
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+.grid__footer--gutter-lg{
+    margin-left: -25px;
+    margin-right: -25px;
+}
+
+@media only screen and (min-width: 768px){
+   .col--4\@md-up {
+    flex-basis: 33.33333%;
+    max-width: 33.33333%;
+    } 
+}
+.grid__footer--gutter-lg>*{
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+/* ส่วนของ logo neat */
+.footer__logo {
+    display: inline-block;
+    margin-bottom: 30px;
+}
+
+.icon--white {
+    fill: #fff;
+}
+
+
+.footer__byline{
+    margin-bottom: 30px;
+    display: block;
+}
+/* กำหนดขนาดฟ้อนให้ tag small */
+small {
+    font-weight: 300;
+    font-size: 14px;
+    font-size: .875rem;
+    line-height: 22px;
+    line-height: 1.375rem;
+    letter-spacing: .5px;
+}
+
+.grid__footer ul.grid__footer, .list{
+    list-style-type: none;
+}
+
+/* ทำให้เรียงเป็นrowเดียวกันในแถบสีทึบข้างล่าง */
+.list--inline .list__item {
+    display: inline-flex;
+}
+
+.grid__footer>*{
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+/* กำหนดขนาด icon */
+.icon--sm {
+    width: 20px;
+    height: 20px;
+}
+
+@media only screen and (min-width: 768px){
+    .col--7\@md-up {
+    flex-basis: 58.33333%;
+    max-width: 58.33333%;
+    }
+    .col--offset-1\@md-up {
+        margin-left: 8.33333%;
+    }
+}
+@media only screen and (min-width: 992px){
+    .grid__footer--spacing-none\@lg-up>*{
+        margin-bottom: 0;
+    }
+}
+
+/* กำหนดฟ้อนที่มีการลิ้ง */
+.footer__links {
+    line-height: 34px;
+    font-size: 14px;
+    font-size: .875rem;
+    letter-spacing: .5px;
+}
+
+/* ขีดเส้นใต้ให้หัวข้อ */
+.footer__category {
+    margin-bottom: 10px;
+    padding-bottom: 10px;
+    border-bottom: 1px solid hsla(0,0%,100%,.25);
+}
+/* กำหนดขนาดฟ้อนหัวข้อ */
+.heading--tiny{
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 22px;
+    line-height: 1.375rem;
+    letter-spacing: .5px;
+    font-weight: 700;
+    font-family: Nunito Sans,Arial,sans-serif;
+    text-transform: uppercase;
+}
+.footer__copy>:last-child{
+    margin-bottom: 0;
+}
+/* ทำให้ข้อความที่มีการลิ้งเป็นเหมือนฟ้อนธรรมดา และ เป็นรูปมือเวลา hover */
+.footer__copy a , .footer__terms a, .footer__copy a:hover{
+    font-family: Nunito Sans,Arial,sans-serif;
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+.link, .link:hover {
+    text-decoration: none;
+    color: #fff;
+    font-weight: 300;
+    cursor: pointer;
+}
+
+/* แถบทึบด้านล่างสุด */
+.footer__legal {
+    width: 100%;
+    padding: 10px 0 7.5px;
+    background: rgba(0,0,0,.15);
+    font-size: 12px;
+    font-size: .75rem;
+    line-height: 22px;
+    line-height: 1.375rem;
+    letter-spacing: .5px;
+    font-weight: 300;
+}
+
+/* ปรับขนาด icon social */
+.contact{
+    width: 4%;
+    margin-left: 10px;
+    position: relative;
+}
+
+/* SVG วงกลมกับสี่เหลี่ยมที่เป็นพื้นหลัง */
+
+#wrapper-circle{
+    z-index: -100;
+}
+
+/* svgวงกลม */
+#circle {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    bottom: 0px;
+    right: 0px;
+ 
+}
+/* svgสี่เหลี่ยม */
+#square {
+    position: absolute;
+    right: 0px;
+    bottom: 0px;
+}
+
+/* เพิ่ม space ระหว่าาง item */
+.grid__footer--justify-space-between {
+    justify-content: space-between;
+}
+/* จัดให้อยุ่ตรงกลาง */
+.grid__footer--align-center {
+    align-items: center;
+}
+
+@media only screen and (min-width: 576px){
+    .grid__footer--spacing-none\@sm-up>*{
+        margin-bottom: 0;
+    }
+}
+
+.footer__terms>:last-child{
+    margin-bottom: 0;
+}
+
+.list__footer--gutter-sm{
+    margin-left: -7.5px;
+    margin-right: -7.5px;
+}
+.list__footer--gutter-sm>*{
+    padding-left: 7.5px;
+    padding-right: 7.5px;
+}
+
+@media only screen and (min-width: 992px){
+    .grid__footer--spacing-none\@lg-up>*, .grid--spacing-none\@lg-up>:last-child{
+        margin-bottom: 0;
+    }
+}
+
+@media only screen and (min-width: 576px){
+    .footer__legal {
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    }
+}
+@media only screen and (min-width: 768px){
+    .footer__links {
+    margin-top: 70px;
+    }
+
+}
+@media only screen and (min-width: 1680px){
+    .grid__footer--gutter-xl\@xxl-up {
+    margin-left: -37.5px;
+    margin-right: -37.5px;
+    }
+}
+@media only screen and (min-width: 576px){
+    .grid__footer--gutter-lg\@sm-up {
+    margin-left: -25px;
+    margin-right: -25px;
+    }
+}
+@media only screen and (min-width: 768px){
+    .grid__footer--justify-flex-end\@md-up {
+    justify-content: flex-end;
+    }
+}
+
+
+@media only screen and (min-width: 1680px){
+    .grid__footer--gutter-xl\@xxl-up>* {
+    padding-left: 37.5px;
+    padding-right: 37.5px;
+    }
+}
+@media only screen and (min-width: 576px){
+  .grid__footer--gutter-lg\@sm-up>* {
+    padding-left: 25px;
+    padding-right: 25px;
+    }  
+}
+
+@media only screen and (min-width: 1200px){
+    .grid__footer--columns-auto\@xl-up>* {
+    flex-basis: auto;
+    max-width: none;
+    }
+}
+@media only screen and (min-width: 576px){
+    .grid__footer--columns-auto\@sm-up>* {
+    flex-basis: auto;
+    max-width: none;
+    }
+}
+
+@media only screen and (min-width: 768px){
+    .grid__footer--columns-equal\@md-up>* {
+    flex: 1 1 auto;
+    }
+}
+
+/* Card Animation */
+.animation{
+    transition-duration: 1s;
+}
+
+.animation:hover{
+    transform: translate(0.9%,-0.9%);
+}
+
