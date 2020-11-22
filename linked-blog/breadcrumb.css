@@ -1,0 +1,33 @@
+ul.breadcrumb {
+    padding-top: 30px;
+    padding-bottom:25px;
+    padding-left:0px;
+    padding-right:0px;
+    margin-bottom:100px;
+    list-style: none;
+    background-color: #eee;
+}
+
+ul.breadcrumb li {
+    font-family:'Nunito Sans', sans-serif;
+    display: inline;
+    font-size: 12px;
+}
+
+ul.breadcrumb li+li:before {
+    padding: 10px;
+    color: #AAAAAA;
+    content: ">";
+}
+
+ul.breadcrumb li a {
+    font-family:'Nunito Sans', sans-serif;
+    color: #AAAAAA;
+    text-decoration: none;
+}
+
+ul.breadcrumb li a:hover {
+    font-family:'Nunito Sans', sans-serif;
+    color: #1b9dff;
+    text-decoration: none;
+}

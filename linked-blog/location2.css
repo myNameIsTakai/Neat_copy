@@ -1,0 +1,83 @@
+
+body,
+html {
+    font-family: 'Nunito', sans-serif;
+    font-weight: 400;
+    float: left;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+img {
+    width: 100%;
+    overflow-x: hidden;
+}
+
+#bigbox2 {
+    width: 70%;
+    margin-left: 7%;
+    margin-right: 25%;
+}
+
+#head_banner{
+    margin-top: 3%;
+    margin-left: -3%;
+}
+#pic_banner{
+    width: 110%;
+    margin-left: 15%;
+    margin-bottom: 3%;
+}
+.pic_women{
+    width: 99%;
+    margin-left: -3%;
+}
+.women_box{
+    margin-top: 4%;
+    margin-left: 1%;
+}
+.pic_man_clean{
+    width: 115%;
+    margin-left: 53%;
+    /* margin-bottom: 100px; */
+}
+.pic_man_clean_gas{
+    width: 70%;
+    margin-left: 43%;
+    margin-top: 14%;
+}
+.pic_women_clean{
+    width: 70%;
+    margin-left: 43%;
+    margin-top: 14%;
+}
+.box_man_clean{
+    margin-top: 6%;
+    margin-left: 7%;
+    margin-right: -15%
+}
+.pic_dog{
+    width: 75%;
+    margin-left: 9%;
+}
+.box_dog{
+    margin-left: 0%;
+    width: 140%;
+}
+#pic_cleaner {
+    text-align: center;
+    width: 31%;
+    border-radius: 3%;
+    margin: 1%;
+}
+
+.svg_OurPromise {
+    width: 18%;
+}
+
+.blue_text_OurPromise {
+    margin-top: 10px;
+    color: #1b9dff;
+    font-size: 0.8em;
+    font-weight: 1000;
+}
