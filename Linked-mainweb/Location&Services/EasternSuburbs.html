@@ -93,7 +93,7 @@
                                                     <li class="bottom-link"><a href="InnerWest.html">Inner West</a></li>
                                                     <li class="bottom-link"><a href="EasternSuburbs.html">Eastern Suburbs</a></li>
                                                     <li class="bottom-link"><a href="NorthernBeaches.html">Northern Beaches</a></li>
-                                                    <li class="bottom-link"><a href="North Shore.html">North Shore</a></li>
+                                                    <li class="bottom-link"><a href="NorthShore.html">North Shore</a></li>
                                                 </ul>
                                             </div>
                                         </div>
@@ -1940,9 +1940,10 @@
       <!----- Get a Quote ------>
 
       <div class="body_card">
-        <div class="card shadow p-3 mb-5 bg-white rounded" style="height:auto; margin-right:15%; margin-left:15%;">
+        <div class="card shadow p-3 mb-5 bg-white rounded"
+            style="height:auto; margin-right:15%; margin-left:15%;">
             <div class="card-body" style="padding:30px;">
-                <p class="card-header-mystyle" style="margin:0px;">
+                <p class="card-header-mystyle" style="margin:0px;" id="section">
                     Get a Quote
                 </p>
                 <p class="card-content">
@@ -1962,19 +1963,24 @@
                         </p>
                         <!-- <p class="card-selection-lighter">.</p> -->
                     </div>
+
                     <div class="custom-control custom-radio custom-control-inline mt-auto mb-auto">
-                        <input type="radio" class="custom-control-input" id="customRadio1" name="btn">
+                        <input type="radio" class="custom-control-input" id="customRadio1" name="btn" value="Stuio">
                         <label class="custom-control-label card-selection-lighter" for="customRadio1">Studio</label>
                     </div>
+
                     <div class="custom-control custom-radio custom-control-inline mt-auto mb-auto">
-                        <input type="radio" class="custom-control-input" id="customRadio2" name="btn">
+                        <input type="radio" class="custom-control-input" id="customRadio2" name="btn"
+                            value="Apartment" checked="checked">
                         <label class="custom-control-label card-selection-lighter"
                             for="customRadio2">Apartment</label>
                     </div>
+
                     <div class="custom-control custom-radio custom-control-inline mt-auto mb-auto">
-                        <input type="radio" class="custom-control-input" id="customRadio3" name="btn">
+                        <input type="radio" class="custom-control-input" id="customRadio3" name="btn" value="House">
                         <label class="custom-control-label card-selection-lighter" for="customRadio3">House</label>
                     </div>
+
                 </div>
                 <hr>
 
@@ -1996,45 +2002,51 @@
                             <div class="col-md-4 center-element">
                                 <p class="card-selection-lighter">Bedroom</p>
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary " id="minus" onclick="minus()">
-                                        <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                                    <label class="btn btn-secondary " id="minus">
+                                        <input type="radio" name="options" id="option1" onclick="minus()"
+                                            autocomplete="off">
                                         -
                                     </label>
                                     <label class="btn btn-secondary" style="width:80px;" id="shownum">
-                                        0
+                                        1
                                     </label>
-                                    <label class="btn btn-secondar" id="plus" onclick="plus()">
-                                        <input type="radio" name="options" id="option3" autocomplete="off"> +
+                                    <label class="btn btn-secondar" id="plus">
+                                        <input type="radio" name="options" id="option3" onclick="plus()"
+                                            autocomplete="off"> +
                                     </label>
                                 </div>
                             </div>
+
                             <div class="col-md-4">
                                 <p class="card-selection-lighter">Other</p>
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary " id="minus" onclick="minus2()">
-                                        <input class="text-light" type="radio" name="options" id="option1"
-                                            autocomplete="off" checked> -
+                                    <label class="btn btn-secondary " id="minus">
+                                        <input class="text-light" type="radio" onclick="minus2()" name="options"
+                                            id="option1" autocomplete="off" checked> -
                                     </label>
                                     <label class="btn btn-secondary" style="width:80px;" id="shownum2">
                                         0
                                     </label>
-                                    <label class="btn btn-secondar" id="plus" onclick="plus2()">
-                                        <input type="radio" name="options" id="option3" autocomplete="off"> +
+                                    <label class="btn btn-secondar" id="plus">
+                                        <input type="radio" name="options" id="option3" onclick="plus2()"
+                                            autocomplete="off"> +
                                     </label>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <p class="card-selection-lighter ">Bathroom</p>
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary " id="minus" onclick="minus3()">
-                                        <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                                    <label class="btn btn-secondary " id="minus">
+                                        <input type="radio" name="options" id="option1" onclick="minus3()"
+                                            autocomplete="off" checked>
                                         -
                                     </label>
                                     <label class="btn btn-secondary" style="width:80px;" id="shownum3">
-                                        0
+                                        1
                                     </label>
-                                    <label class="btn btn-secondar" id="plus" onclick="plus3()">
-                                        <input type="radio" name="options" id="option3" autocomplete="off"> +
+                                    <label class="btn btn-secondar" id="plus">
+                                        <input type="radio" name="options" id="option3" onclick="plus3()"
+                                            autocomplete="off"> +
                                     </label>
                                 </div>
                             </div>
@@ -2060,45 +2072,50 @@
                             <div class="col-md-4">
                                 <p class="card-selection-lighter">Laundry</p>
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary " id="minus" onclick="minus4()">
-                                        <input class="text-light" type="radio" name="options" id="option1"
-                                            autocomplete="off" checked> -
+                                    <label class="btn btn-secondary " id="minus">
+                                        <input class="text-light" type="radio" onclick="minus4()" name="options"
+                                            id="option1" autocomplete="off" checked> -
                                     </label>
                                     <label class="btn btn-secondary" style="width:80px;" id="shownum4">
-                                        0
+                                        1
                                     </label>
-                                    <label class="btn btn-secondar" id="plus" onclick="plus4()">
-                                        <input type="radio" name="options" id="option3" autocomplete="off"> +
+                                    <label class="btn btn-secondar" id="plus">
+                                        <input type="radio" name="options" onclick="plus4()" id="option3"
+                                            autocomplete="off"> +
                                     </label>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <p class="card-selection-lighter">Balcony</p>
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary " id="minus" onclick="minus5()">
-                                        <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                                    <label class="btn btn-secondary " id="minus">
+                                        <input type="radio" name="options" id="option1" onclick="minus5()"
+                                            autocomplete="off" checked>
                                         -
                                     </label>
                                     <label class="btn btn-secondary" style="width:80px;" id="shownum5">
                                         0
                                     </label>
-                                    <label class="btn btn-secondar" id="plus" onclick="plus5()">
-                                        <input type="radio" name="options" id="option3" autocomplete="off"> +
+                                    <label class="btn btn-secondar" id="plus">
+                                        <input type="radio" name="options" id="option3" onclick="plus5()"
+                                            autocomplete="off"> +
                                     </label>
                                 </div>
                             </div>
                             <div class="col-md-4">
                                 <p class="card-selection-lighter">Garage</p>
                                 <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                    <label class="btn btn-secondary " id="minus" onclick="minus6()">
-                                        <input type="radio" name="options" id="option1" autocomplete="off" checked>
+                                    <label class="btn btn-secondary " id="minus">
+                                        <input type="radio" name="options" id="option1" onclick="minus6()"
+                                            autocomplete="off" checked>
                                         -
                                     </label>
                                     <label class="btn btn-secondary" style="width:80px;" id="shownum6">
                                         0
                                     </label>
-                                    <label class="btn btn-secondar" id="plus" onclick="plus6()">
-                                        <input type="radio" name="options" id="option3" autocomplete="off"> +
+                                    <label class="btn btn-secondar" id="plus">
+                                        <input type="radio" name="options" id="option3" onclick="plus6()"
+                                            autocomplete="off"> +
                                     </label>
                                 </div>
                             </div>
@@ -2173,15 +2190,16 @@
                                     </div>
                                     <div class="row" id="hover-item">
                                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                            <label class="btn btn-secondary " id="minus" onclick="minus7()">
-                                                <input class="text-light" type="radio" name="options" id="option1"
-                                                    autocomplete="off" checked> -
+                                            <label class="btn btn-secondary " id="minus">
+                                                <input class="text-light" type="radio" onclick="minus7()"
+                                                    name="options" id="option1" autocomplete="off" checked> -
                                             </label>
                                             <label class="btn btn-secondary" style="width:60px;" id="shownum7">
                                                 0
                                             </label>
-                                            <label class="btn btn-secondar" id="plus" onclick="plus7()">
-                                                <input type="radio" name="options" id="option3" autocomplete="off">
+                                            <label class="btn btn-secondar" id="plus">
+                                                <input type="radio" name="options" id="option3" onclick="plus7()"
+                                                    autocomplete="off">
                                                 +
                                             </label>
                                         </div>
@@ -2215,15 +2233,16 @@
                                     </div>
                                     <div class="row" id="hover-item2">
                                         <div class="btn-group btn-group-toggle" data-toggle="buttons">
-                                            <label class="btn btn-secondary " id="minus" onclick="minus8()">
-                                                <input class="text-light" type="radio" name="options" id="option1"
-                                                    autocomplete="off" checked> -
+                                            <label class="btn btn-secondary " id="minus">
+                                                <input class="text-light" type="radio" name="options"
+                                                    onclick="minus8()" id="option1" autocomplete="off" checked> -
                                             </label>
                                             <label class="btn btn-secondary" style="width:60px;" id="shownum8">
                                                 0
                                             </label>
-                                            <label class="btn btn-secondar" id="plus" onclick="plus8()">
-                                                <input type="radio" name="options" id="option3" autocomplete="off">
+                                            <label class="btn btn-secondar" id="plus">
+                                                <input type="radio" name="options" id="option3" onclick="plus8()"
+                                                    autocomplete="off">
                                                 +
                                             </label>
                                         </div>
@@ -2334,31 +2353,69 @@
                 <!-- จบ row3 -->
 
                 <!----------------- จบ Extras -------------->
-
+                <!-- 
+        side bar
+     -->
                 <div id="mySidebar" class="sidebar">
-                    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">
-                        <- Back</a>
+                    <div class="container" style="height:80%;">
+                        <p class="font-sizebar" style="text-align:center;">
+                            Quote
+                        </p>
+                        <p id="block1"></p>
+                        <hr>
+                        <p id="block2"></p>
+                        <p id="block22"></p>
+                        <p id="block23"></p>
+                        <p id="block24"></p>
+                        <p id="block25"></p>
+                        <hr>
+                        <p id="block3"></p>
+                        <p id="block32"></p>
+                        <p id="block33"></p>
+                        <hr>
+                        <p id="block41"></p>
+                        <p id="block42"></p>
+                        <p id="block43"></p>
+                        <p id="block44"></p>
+                        <p id="block45"></p>
+                        <p id="block46"></p>
+                        <p id="block47"></p>
+                        <p id="block48"></p>
+                    </div>
+                    <hr>
+                    <p id="block51" style="padding-left:15px;"></p>
+                    <p id="block52"></p>
+                    <p id="block53"></p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="javascript:void(0)" onclick="closeNav()">
+                                <img src="Back.png" class="closebtn">
+                            </a>
+                        </div>
+
+                        <div class="col-6">
+                            <a>
+                                <button class="openbtn" href="javascript:void(0)"
+                                    style="width:100%; margin-top: 12px;" onclick="Checkout()" id="alert">Checkout
+                                    -> </button>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+
                 </div>
                 <!-- ปุ่ม Get Quote -->
                 <div id="main">
                     <button class="openbtn" onclick="openNav()">GET QUOTE > </button>
                 </div>
 
-                <script>
-                    function openNav() {
-                        document.getElementById("mySidebar").style.width = "250px";
-                        document.getElementsByClassName("body_all").style.filter = "blur(8px)";
-                    }
-
-                    function closeNav() {
-                        document.getElementById("mySidebar").style.width = "0";
-                    }
-                </script>
-
             </div>
         </div>
     </div>
-    <!----- จบ Get a Quote ----->
+    <!-- จบ Get a Quote -->
 
     </div>
     
@@ -2474,7 +2531,7 @@
                                     href="NorthernBeaches.html">Northern
                                     Beaches</a><br>
                                 <a class="link"
-                                    href="North Shore.html">North
+                                    href="NorthShore.html">North
                                     Shore</a><br>
                                 <a class="link"
                                     href="VacateCleaning.html">Surry

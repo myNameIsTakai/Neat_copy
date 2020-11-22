@@ -22,6 +22,9 @@
     <link rel="stylesheet" href="breadcrumb.css">
     <link rel="stylesheet" href="footer.css">
     <link rel="stylesheet" href="navbarStyle.css">
+    <link rel="stylesheet" href="getaquote.css">
+    <!-- link js -->
+    <script src="formScript.js"></script>
     <!-- font -->
     <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Source+Sans+Pro:ital@1&display=swap" rel="stylesheet">
@@ -31,172 +34,200 @@
 </head>
 
 <body>
-    <!-- NavBar -->
     <section class="navBar">
         <!-- Origin Row  -->
-        <div class="row">
-            <div class="col text-md-left text-sm-center text-center">
-                <!-- แถบแจ้งเตือนโปรโมชั่น -->
-                <div class="alert-bar">
-                    <p>Try voucher code <b>HALLOWEEN20</b> for <b>20% OFF</b> 😜.<br class="breakline">Expires
-                        31/10/2020.</p>
-                </div>
-            </div>
+        <!-- แถบแจ้งเตือนโปรโมชั่น -->
+        <div class="alert-bar">
+            <p>Try voucher code <b>BLACKFRIDAY15</b> for <b>15% OFF</b> 😜.<br class="breakline">Expires 31/11/2020.</p>
         </div>
         <!-- แถบ nav bar -->
-        <div class="row">
-            <div class="col">
-                <nav class="navbar navbar-expand-lg navbar-custom">
-                    <!-- Logo -->
-                    <a class="navbar-brand" href=""><svg width="5.625rem" height="3.125rem">
-                            <path fill="white"
-                                d="M16.3 27.3c-.1-.3-.3-.3-.4-.3-1.5 0-6.2 10.3-9.6 15.9-.4.8-.8 1-1.2 1-1.3.1-4.6-1.8-4.6-3.3 3.1-6.2 17-32.8 17.5-35 .4-1.4 1.9-1.7 3-1.7 1.8 0 6.2 2 6.2 4.2 0 .6-.5.9-.6 1.3-3.8 11.6-4.2 12.2-5.9 22C24.5 23 29.9 8.8 32.8 2.9c.4-1.4 1.9-1.7 3.1-1.7 1.8 0 6.2 2 6.2 4.2 0 .6-.3 1-.6 1.3-10.6 13.1-16.8 26.4-19.9 33.9-.5 1.2-1.2 1.6-1.7 1.6-1.2 0-2.4-1.2-3.8-2.6-.7-.6-.9-1.5-.9-2.5 0-2.2.6-6.3 1.1-9.8zm15.6 9.4c-.1.8-.2 1.4-.2 2 0 1.2.5 1.7 1.5 1.7 3.5 0 7.5-3.7 10.8-7.6 1.5-1.6 6.4-7.7 7.3-9 .2-.2.3-.3.4-.3.5 0 .8 1 .8 1-1.3 2.2-4.2 6.4-7.1 10.3-3.5 4.7-8.3 8.7-11.4 8.7-1.9 0-6.7-2.9-6.7-6.7C27.3 29.2 34.5 18 40 18c1.6 0 2 2.7 3.6 3.7 1.1.7 2.9 1 2.9 3.5-.2 2.5-10.2 9.2-14.6 11.5zm9.9-12.2c-.2-.1-.4-.1-.5-.1-3.6.9-6.9 4.9-8.5 9.3 6.1-4.2 8.1-7.3 9-9.2zm12.4 14c-1.9 1.9-4.5 4.7-6 4.7-1.9 0-4.5-1.5-4.5-3.7 0-7 8.6-21.8 12.7-21.8.3 0 .5.1.9.2 1.2.5 2.9 1.7 2.9 3.4 0 .5-.3 1.1-.8 1.5 1.8.2 4 1.5 4 3.4 0 .6-.2 1.2-.6 1.6-1.5 2-3.9 5.8-4.6 7.6-.4 1.2-.6 1.7-.6 2.3 0 .6.3.9.6.9.4 0 .9-.3 1.2-.8.5-.5 2.4-2.8 4.5-5.1 1.5-1.6 6.4-7.7 7.3-9 .2-.2.3-.3.4-.3.5 0 .8 1 .8 1-1.4 2.1-4.3 6.4-7.2 10.3-2.9 3.9-6 8.2-7.8 8.2-1.6.2-3.1-1.1-3.2-4.4zm1.9-10.6c0-.6-.4-1.1-.9-1.1-1.6 0-7.7 9.6-7.7 12.3 0 .5.2.7.5.7s.5-.1.9-.3c2.2-1.8 6.5-9.2 7.2-11.1v-.5zM79.8 8c1.5 0 4 1.8 4 3.6 0 .5-.2 1-.4 1.2-1.2 1.8-2.6 3.8-3.9 5.8 1.2.9 2.7 1.5 2.7 2.6 0 .6-.3.8-.8.8l-4.6.6c-3.3 4.7-6.4 9.7-8.3 14.1-.2.6-.3 1.1-.3 1.4 0 .5.2.9.6.9.3 0 .9-.2 1.5-.6.9-.5 3.5-2.4 5.7-5.3 1.5-1.6 6.4-7.7 7.3-9 .2-.2.3-.3.4-.3.5 0 .8 1 .8 1-1.4 2.1-4.4 6.4-7.2 10.3-1.5 2.2-4.8 5.9-6.8 7.5-.4.3-.9.5-1.3.5-2.1 0-4.8-2.5-4.8-4.7 0-3 3-9.2 6.2-15.2-3.2-1.1-3.6-2.7-3.6-4.3 0-.6.3-.8.8-.8 1 0 3.2.3 5.4.4 2-3.7 3.8-7 4.5-8.6C77.9 8.3 79 8 79.8 8z">
-                            </path>
-                        </svg></a>
-                    <!-- ปุ่มกดตอนย่อจอ -->
-                    <!--                     <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+        <nav class="navbar navbar-expand-lg navbar-custom" style="z-index: 1;">
+            <!-- Logo -->
+            <a class="navbar-brand" href="../index.html"><svg width="5.625rem" height="3.125rem">
+                    <path fill="white"
+                        d="M16.3 27.3c-.1-.3-.3-.3-.4-.3-1.5 0-6.2 10.3-9.6 15.9-.4.8-.8 1-1.2 1-1.3.1-4.6-1.8-4.6-3.3 3.1-6.2 17-32.8 17.5-35 .4-1.4 1.9-1.7 3-1.7 1.8 0 6.2 2 6.2 4.2 0 .6-.5.9-.6 1.3-3.8 11.6-4.2 12.2-5.9 22C24.5 23 29.9 8.8 32.8 2.9c.4-1.4 1.9-1.7 3.1-1.7 1.8 0 6.2 2 6.2 4.2 0 .6-.3 1-.6 1.3-10.6 13.1-16.8 26.4-19.9 33.9-.5 1.2-1.2 1.6-1.7 1.6-1.2 0-2.4-1.2-3.8-2.6-.7-.6-.9-1.5-.9-2.5 0-2.2.6-6.3 1.1-9.8zm15.6 9.4c-.1.8-.2 1.4-.2 2 0 1.2.5 1.7 1.5 1.7 3.5 0 7.5-3.7 10.8-7.6 1.5-1.6 6.4-7.7 7.3-9 .2-.2.3-.3.4-.3.5 0 .8 1 .8 1-1.3 2.2-4.2 6.4-7.1 10.3-3.5 4.7-8.3 8.7-11.4 8.7-1.9 0-6.7-2.9-6.7-6.7C27.3 29.2 34.5 18 40 18c1.6 0 2 2.7 3.6 3.7 1.1.7 2.9 1 2.9 3.5-.2 2.5-10.2 9.2-14.6 11.5zm9.9-12.2c-.2-.1-.4-.1-.5-.1-3.6.9-6.9 4.9-8.5 9.3 6.1-4.2 8.1-7.3 9-9.2zm12.4 14c-1.9 1.9-4.5 4.7-6 4.7-1.9 0-4.5-1.5-4.5-3.7 0-7 8.6-21.8 12.7-21.8.3 0 .5.1.9.2 1.2.5 2.9 1.7 2.9 3.4 0 .5-.3 1.1-.8 1.5 1.8.2 4 1.5 4 3.4 0 .6-.2 1.2-.6 1.6-1.5 2-3.9 5.8-4.6 7.6-.4 1.2-.6 1.7-.6 2.3 0 .6.3.9.6.9.4 0 .9-.3 1.2-.8.5-.5 2.4-2.8 4.5-5.1 1.5-1.6 6.4-7.7 7.3-9 .2-.2.3-.3.4-.3.5 0 .8 1 .8 1-1.4 2.1-4.3 6.4-7.2 10.3-2.9 3.9-6 8.2-7.8 8.2-1.6.2-3.1-1.1-3.2-4.4zm1.9-10.6c0-.6-.4-1.1-.9-1.1-1.6 0-7.7 9.6-7.7 12.3 0 .5.2.7.5.7s.5-.1.9-.3c2.2-1.8 6.5-9.2 7.2-11.1v-.5zM79.8 8c1.5 0 4 1.8 4 3.6 0 .5-.2 1-.4 1.2-1.2 1.8-2.6 3.8-3.9 5.8 1.2.9 2.7 1.5 2.7 2.6 0 .6-.3.8-.8.8l-4.6.6c-3.3 4.7-6.4 9.7-8.3 14.1-.2.6-.3 1.1-.3 1.4 0 .5.2.9.6.9.3 0 .9-.2 1.5-.6.9-.5 3.5-2.4 5.7-5.3 1.5-1.6 6.4-7.7 7.3-9 .2-.2.3-.3.4-.3.5 0 .8 1 .8 1-1.4 2.1-4.4 6.4-7.2 10.3-1.5 2.2-4.8 5.9-6.8 7.5-.4.3-.9.5-1.3.5-2.1 0-4.8-2.5-4.8-4.7 0-3 3-9.2 6.2-15.2-3.2-1.1-3.6-2.7-3.6-4.3 0-.6.3-.8.8-.8 1 0 3.2.3 5.4.4 2-3.7 3.8-7 4.5-8.6C77.9 8.3 79 8 79.8 8z">
+                    </path>
+                </svg></a>
+            <!-- ปุ่มกดตอนย่อจอ -->
+            <!-- <button class="navbar-toggler navbar-light" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
                     <span class="navbar-toggler-icon navbar-light"></span></button> -->
-                    <!-- แถบจอปกติ     -->
-                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                        <ul class="navbar-nav mr-auto">
-                            <!-- Location Section -->
-                            <li class="nav-item dropdown" id="fst" style="margin-left: 10rem;">
-                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
-                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <b>LOCATIONS</b>
-                                </a>
-                                <div class="dropdown-menu shadow-lg p-3 bg-white rounded border-0"
-                                    aria-labelledby="navbarDropdown">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col-md-4">
-                                                <div class="card border-0" style="width:15.7vw;">
-                                                    <img class="card-img-top rounded"
-                                                        src="https://i1.wp.com/thisisneat.com.au/wp-content/uploads/2020/01/locations-sydney.jpg?resize=280%2C175&ssl=1"
-                                                        alt="Card image cap">
-                                                    <h6 class="card-title"><a href="Sydney.html">SYDNEY</a></h6>
-                                                    <p class="card-text">From hidden terraces to apartment high-rises,
-                                                        we offer Sydney's best end of lease cleaning service.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card border-0 " style="width: 15.7vw;">
-                                                    <img class="card-img-top rounded"
-                                                        src="https://i2.wp.com/thisisneat.com.au/wp-content/uploads/2020/01/locations-melbourne.jpg?resize=280%2C175&ssl=1"
-                                                        alt="Card image cap">
-                                                    <h6 class="card-title"><a href="Melbourne.html">MELBOURNE</a></h6>
-                                                    <p class="card-text">Melbourne might be known for it’s coffee
-                                                        culture, but our claim to fame is a hassle-free end of lease
-                                                        clean.</p>
-                                                </div>
-                                            </div>
+            <!-- แถบจอปกติ     -->
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav mr-auto">
+                    <!-- Location Section -->
+                    <li class="nav-item dropdown" id="fst" style="margin-left: 10rem;">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>LOCATIONS</b>
+                        </a>
+                        <div class="dropdown-menu shadow-lg p-3 bg-white rounded border-0"
+                            aria-labelledby="navbarDropdown">
+                            <div class="container-fluid">
+                                <div class="row">
+                                    <div class="col-md-4">
+                                        <div class="card border-0" style="width:15.7vw;">
+                                            <img class="card-img-top rounded"
+                                                src="https://i1.wp.com/thisisneat.com.au/wp-content/uploads/2020/01/locations-sydney.jpg?resize=280%2C175&ssl=1"
+                                                alt="Card image cap">
+                                            <h6 class="card-title"><a href="Sydney.html">SYDNEY</a></h6>
+                                            <p class="card-text">From hidden terraces to apartment high-rises, we offer
+                                                Sydney's best end of lease cleaning service.</p>
                                         </div>
-                                        <div class="border-top my-4">
-                                            <div class="row">
-                                                <div class="col">
-                                                    <div class="card border-0 card-bottom">
-                                                        <ul class="bottom-list">
-                                                            <li class="bottom-link"><a href="InnerWest.html">Inner West</a></li>
-                                                            <li class="bottom-link"><a href="EasternSuburbs.html">Eastern Suburbs</a></li>
-                                                            <li class="bottom-link"><a href="NorthernBeaches.html">Northern Beaches</a></li>
-                                                            <li class="bottom-link"><a href="North Shore.html">North Shore</a></li>
-                                                        </ul>
-                                                    </div>
-                                                </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card border-0 " style="width: 15.7vw;">
+                                            <img class="card-img-top rounded"
+                                                src="https://i2.wp.com/thisisneat.com.au/wp-content/uploads/2020/01/locations-melbourne.jpg?resize=280%2C175&ssl=1"
+                                                alt="Card image cap">
+                                            <h6 class="card-title"><a href="Melbourne.html">MELBOURNE</a></h6>
+                                            <p class="card-text">Melbourne might be known for it’s coffee culture, but
+                                                our claim to fame is a hassle-free end of lease clean.</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="border-top my-4">
+                                    <div class="row">
+                                        <div class="col">
+                                            <div class="card border-0 card-bottom">
+                                                <ul class="bottom-list">
+                                                    <li class="bottom-link"><a href="InnerWest.html">Inner West</a></li>
+                                                    <li class="bottom-link"><a href="EasternSuburbs.html">Eastern
+                                                            Suburbs</a></li>
+                                                    <li class="bottom-link"><a href="NorthernBeaches.html">Northern
+                                                            Beaches</a></li>
+                                                    <li class="bottom-link"><a href="NorthShore.html">North Shore</a>
+                                                    </li>
+                                                </ul>
                                             </div>
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <!-- Service Section -->
-                            <li class="nav-item dropdown" id="sst" style="padding-left: 3.75rem;">
-                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
-                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <b>SERVICES</b>
-                                </a>
-                                <div id="position-dp" class="dropdown-menu shadow-lg p-3 bg-white rounded border-0"
-                                    aria-labelledby="navbarDropdown" style="left: -97%;">
-                                    <div class="container">
-                                        <div class="row" style="margin-bottom: 3%;">
-                                            <div class="col-md-4">
-                                                <div class="card border-0" style="width:15.7vw;">
-                                                    <img class="card-img-top rounded"
-                                                        src="https://i0.wp.com/thisisneat.com.au/wp-content/uploads/2020/01/end-of-lease-cleaning-service.jpg?resize=280%2C175&ssl=1"
-                                                        alt="Card image cap">
-                                                    <h6 class="card-title"><a href="Sydney.html">END OF LEASE CLEANING</a></h6>
-                                                    <p class="card-text">With our famous bond back guarantee, our
-                                                        cleaners always ensure tenants recover their full rental
-                                                        deposits.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card border-0 " style="width: 15.7vw;">
-                                                    <img class="card-img-top rounded"
-                                                        src="https://i0.wp.com/thisisneat.com.au/wp-content/uploads/2020/01/vacate-cleaning-service.jpg?resize=280%2C175&ssl=1"
-                                                        alt="Card image cap">
-                                                    <h6 class="card-title"><a href="VacateCleaning.html">VACATE CLEANING</a></h6>
-                                                    <p class="card-text">Our 5-star rated cleaners specialise in helping
-                                                        renters pass their final vacate inspections.</p>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-4">
-                                                <div class="card border-0 " style="width: 15.7vw;">
-                                                    <img class="card-img-top rounded"
-                                                        src="https://i0.wp.com/thisisneat.com.au/wp-content/uploads/2020/01/move-in-move-out-cleaning-service.jpg?resize=280%2C175&ssl=1"
-                                                        alt="Card image cap">
-                                                    <h6 class="card-title"><a href="MovingCleaning.html">MOVING CLEANING</a></h6>
-                                                    <p class="card-text">Our cleaning teams will make sure your property
-                                                        is ready for sale, a rental inspection, or for your family to
-                                                        move into.</p>
-                                                </div>
-                                            </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Service Section -->
+                    <li class="nav-item dropdown" id="sst" style="padding-left: 3.75rem;">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>SERVICES</b>
+                        </a>
+                        <div id="position-dp" class="dropdown-menu shadow-lg p-3 bg-white rounded border-0"
+                            aria-labelledby="navbarDropdown" style="left: -97%;">
+                            <div class="container">
+                                <div class="row" style="margin-bottom: 3%;">
+                                    <div class="col-md-4">
+                                        <div class="card border-0" style="width:15.7vw;">
+                                            <img class="card-img-top rounded"
+                                                src="https://i0.wp.com/thisisneat.com.au/wp-content/uploads/2020/01/end-of-lease-cleaning-service.jpg?resize=280%2C175&ssl=1"
+                                                alt="Card image cap">
+                                            <h6 class="card-title"><a href="Sydney.html">END OF LEASE CLEANING</a></h6>
+                                            <p class="card-text">With our famous bond back guarantee, our cleaners
+                                                always ensure tenants recover their full rental deposits.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card border-0 " style="width: 15.7vw;">
+                                            <img class="card-img-top rounded"
+                                                src="https://i0.wp.com/thisisneat.com.au/wp-content/uploads/2020/01/vacate-cleaning-service.jpg?resize=280%2C175&ssl=1"
+                                                alt="Card image cap">
+                                            <h6 class="card-title"><a href="VacateCleaning.html">VACATE CLEANING</a>
+                                            </h6>
+                                            <p class="card-text">Our 5-star rated cleaners specialise in helping renters
+                                                pass their final vacate inspections.</p>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card border-0 " style="width: 15.7vw;">
+                                            <img class="card-img-top rounded"
+                                                src="https://i0.wp.com/thisisneat.com.au/wp-content/uploads/2020/01/move-in-move-out-cleaning-service.jpg?resize=280%2C175&ssl=1"
+                                                alt="Card image cap">
+                                            <h6 class="card-title"><a href="MovingCleaning.html">MOVING CLEANING</a>
+                                            </h6>
+                                            <p class="card-text">Our cleaning teams will make sure your property is
+                                                ready for sale, a rental inspection, or for your family to move into.
+                                            </p>
                                         </div>
                                     </div>
                                 </div>
-                            </li>
-                            <!-- Resource Section -->
-                            <li class="nav-item dropdown" id="sst" style="padding-left: 3.75rem;">
-                                <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown"
-                                    role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                    <b>RESOURCES</b>
-                                </a>
-                                <div id="position-dp-2" class="dropdown-menu shadow-lg p-3 bg-white rounded border-0"
-                                    aria-labelledby="navbarDropdown" style="left: -205%;">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-                                                <a class="dropdown-item" href="#">Action</a>
-                                                <a class="dropdown-item" href="#">Another action</a>
-                                                <a class="dropdown-item" href="#">Something else here</a>
-                                            </div>
-                                        </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Resource Section -->
+                    <li class="nav-item dropdown" id="sst" style="padding-left: 3.75rem;">
+                        <a class="nav-link dropdown-toggle text-light" href="#" id="navbarDropdown" role="button"
+                            data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                            <b>RESOURCES</b>
+                        </a>
+                        <div id="position-dp-2" class="dropdown-menu shadow-lg p-3 bg-white rounded border-0"
+                            aria-labelledby="navbarDropdown" style="left: -205%;">
+                            <div class="container font-in-nbar">
+                                <div class="row">
+                                    <div class="col-6">
+                                        <b style="font-size:12px;">CHECKLIST</b><br><br>
+                                        <a class="Just-link" style="padding-left:0px;" href="../EOL.html">The Ultimate
+                                            End
+                                            of Lease Cleaning Checklist</a>
+                                        <p style="font-size:12px; color:#666666;">For those on a budget and looking to
+                                            perform their own end of lease cleans.</p>
+
+                                        <a class="Just-link" style="padding-left:0px;" href="../MHC.html">The Ultimate
+                                            Moving House Checklist</a>
+                                        <p style="font-size:12px; color:#666666;">From years of industry experience, a
+                                            guide to help customers make the big move.</p>
+
+                                        <a class="Just-link" style="padding-left:0px;" href="../OMC.html">The Ultimate
+                                            Moving Overseas Checklist</a>
+                                        <p style="font-size:12px; color:#666666;">A comprehensive moving plan for those
+                                            venturing overseas.</p>
+                                    </div>
+                                    <div class=”col-1”>
+                                        <div style="background-color:#666666; height:100%; width:1px;"></div>
+                                    </div>
+                                    <div class="col-4">
+                                        <b style="font-size:12px;">Q & A</b><br><br>
+                                        <a class="Just-link" style="padding-left:0px;" href="../Q&A1.html">
+                                            What is Bond Cleaning?
+                                        </a>
+                                        <br><br>
+                                        <a class="Just-link" style="padding-left:0px;" href="../Q&A2.html">
+                                            How Much Is a Bond Clean?
+                                        </a>
+                                        <br><br>
+                                        <a class="Just-link" style="padding-left:0px;" href="../Q&A3.html">
+                                            What’s the Price of an End of Lease Clean?
+                                        </a>
+                                        <br><br>
+
                                     </div>
                                 </div>
-                            </li>
-                            <!-- Blog Section -->
-                            <li class="nav-item" id="sst" style="padding-left: 3.75rem;">
-                                <a class="nav-link active text-light" href="#"><b>BLOG</b></a>
-                            </li>
-                            <!-- Reviews -->
-                            <li class="nav-item" id="sst" style="padding-left: 3.75rem;">
-                                <a class="nav-link active text-light" href="#"><b>REVIEWS</b></a>
-                            </li>
-                        </ul>
-                        <!-- ปุ่ม GET THE QUOTE -->
-                        <form class="form-inline my-2 my-lg-0 text-light">
-                            <button class="btn btn-outline-success bg-danger my-2 my-sm-0" id="custom-form"
-                                type="submit">GET A QUOTE</button>
-                        </form>
-                    </div>
-                </nav>
-                <!-- แถบจอ responsive -->
-                <div class="collapse navbar-collapse bg-dark" id="navbarNavDropdown">
-                    <div class="container">
-                        <p>Example</p>
-                    </div>
-                </div>
+                            </div>
+                        </div>
+                    </li>
+                    <!-- Blog Section -->
+                    <li class="nav-item" id="sst" style="padding-left: 3.75rem;">
+                        <a class="nav-link active text-light" href="../Blog/blog.html"><b>BLOG</b></a>
+                    </li>
+                    <!-- Reviews -->
+                    <li class="nav-item" id="sst" style="padding-left: 3.75rem;">
+                        <a class="nav-link active text-light"
+                            href="https://www.google.com.au/search?rlz=1C5CHFA_enAU763AU763&ei=dk3SXJjpC4ao_QbswquQAQ&q=this+is+neat+cleaning+sydney&oq=this+is+neat+cleaning+sydney&gs_l=psy-ab.3..33i21.13806.14467..14553...0.0..0.218.892.0j4j1......0....1..gws-wiz.......0i71j0i22i30j33i22i29i30.ySpCyBxpw1Q#lrd=0x6b12b9f8d4ae6a43:0x4d6a4d6ebad0981f,1,,,"><b>REVIEWS</b></a>
+                    </li>
+                </ul>
+                <!-- ปุ่ม GET THE QUOTE -->
+                <form class="form-inline my-2 text-light" style="padding-right: 3%; z-index: 1;">
+                    <a class="nav-link" href="#section">
+                        <button class="btn btn-outline-success bg-danger my-2 my-sm-0" id="custom-form"
+                            type="submit">GET A
+                            QUOTE</button></a>
+                </form>
             </div>
-        </div>
+        </nav>
+        <!-- svg สีฟ้า -->
+        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="height:800px; width:auto;">
+            <path fill="#1D9DFF" fill-opacity="1"
+                d="M0,128L60,154.7C120,181,240,235,360,234.7C480,235,600,181,720,165.3C840,149,960,171,1080,192C1200,213,1320,235,1380,245.3L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
+            </path>
+        </svg> -->
     </section>
 
     <!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -2154,9 +2185,486 @@
         <!-- จบ carousel -->
 
     </div>
-
-
     <!-- ------------------------------------------------------------------------- -->
+    <!----- Get a Quote ------>
+
+    <div class="body_card">
+        <div class="card shadow p-3 mb-5 bg-white rounded"
+            style="height:auto; margin-right:24%; margin-left:24%;">
+            <div class="card-body" style="padding:30px;">
+                <p class="card-header-mystyle" style="margin:0px;" id="section">
+                    Get a Quote
+                </p>
+                <p class="card-content">
+                    Let us know the details of your property and<br>we’ll provide you with an
+                    instant end of lease cleaning quote.
+                </p>
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <p class="card-selection" style="margin:0px;">
+                            Property <br>
+                        </p>
+                        <p class="card-selection-lighter" style="margin-bottom: 0px;">
+                            All properties must be<br>
+                        </p>
+                        <p class="card-selection-lighter" style="font-weight: bold;">
+                            <span style="background-color: rgb(255, 255, 87);">&nbspunfurnished</span>
+                        </p>
+                        <!-- <p class="card-selection-lighter">.</p> -->
+                    </div>
+
+                    <div class="custom-control custom-radio custom-control-inline mt-auto mb-auto">
+                        <input type="radio" class="custom-control-input" id="customRadio1" name="btn" value="Stuio">
+                        <label class="custom-control-label card-selection-lighter" for="customRadio1">Studio</label>
+                    </div>
+
+                    <div class="custom-control custom-radio custom-control-inline mt-auto mb-auto">
+                        <input type="radio" class="custom-control-input" id="customRadio2" name="btn"
+                            value="Apartment" checked="checked">
+                        <label class="custom-control-label card-selection-lighter"
+                            for="customRadio2">Apartment</label>
+                    </div>
+
+                    <div class="custom-control custom-radio custom-control-inline mt-auto mb-auto">
+                        <input type="radio" class="custom-control-input" id="customRadio3" name="btn" value="House">
+                        <label class="custom-control-label card-selection-lighter" for="customRadio3">House</label>
+                    </div>
+
+                </div>
+                <hr>
+
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <p class="card-selection-lighter" style="margin:0px;">
+                            Rooms<br>
+                        </p>
+                        <p class="card-selection-lighter" style="margin-bottom: 0px;">
+                            Other rooms should include any<br>
+                        </p>
+                        <p class="card-selection-lighter" style="font-weight: bold;">
+                            <span style="background-color: rgb(255, 255, 87);">&nbspdining, family, sun, or study
+                                <br> rooms.</span>
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-4 center-element">
+                                <p class="card-selection-lighter">Bedroom</p>
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-secondary " id="minus">
+                                        <input type="radio" name="options" id="option1" onclick="minus()"
+                                            autocomplete="off">
+                                        -
+                                    </label>
+                                    <label class="btn btn-secondary" style="width:80px;" id="shownum">
+                                        1
+                                    </label>
+                                    <label class="btn btn-secondar" id="plus">
+                                        <input type="radio" name="options" id="option3" onclick="plus()"
+                                            autocomplete="off"> +
+                                    </label>
+                                </div>
+                            </div>
+
+                            <div class="col-md-4">
+                                <p class="card-selection-lighter">Other</p>
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-secondary " id="minus">
+                                        <input class="text-light" type="radio" onclick="minus2()" name="options"
+                                            id="option1" autocomplete="off" checked> -
+                                    </label>
+                                    <label class="btn btn-secondary" style="width:80px;" id="shownum2">
+                                        0
+                                    </label>
+                                    <label class="btn btn-secondar" id="plus">
+                                        <input type="radio" name="options" id="option3" onclick="plus2()"
+                                            autocomplete="off"> +
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="card-selection-lighter ">Bathroom</p>
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-secondary " id="minus">
+                                        <input type="radio" name="options" id="option1" onclick="minus3()"
+                                            autocomplete="off" checked>
+                                        -
+                                    </label>
+                                    <label class="btn btn-secondary" style="width:80px;" id="shownum3">
+                                        1
+                                    </label>
+                                    <label class="btn btn-secondar" id="plus">
+                                        <input type="radio" name="options" id="option3" onclick="plus3()"
+                                            autocomplete="off"> +
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <div class="row mt-5">
+                    <div class="col-md-4">
+                        <p class="card-selection" style="margin:0px;">
+                            Amenities<br>
+                        </p>
+                        <p class="card-selection-lighter" style="margin-bottom: 0px;">
+                            Balconies include<span
+                                style="background-color: rgb(255, 255, 87);font-weight: bold;">&nbsp 1 set of
+                                sliding doors.</span>
+                            Additional entrances should be considered as separate balconies.
+                        </p>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row">
+                            <div class="col-md-4">
+                                <p class="card-selection-lighter">Laundry</p>
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-secondary " id="minus">
+                                        <input class="text-light" type="radio" onclick="minus4()" name="options"
+                                            id="option1" autocomplete="off" checked> -
+                                    </label>
+                                    <label class="btn btn-secondary" style="width:80px;" id="shownum4">
+                                        1
+                                    </label>
+                                    <label class="btn btn-secondar" id="plus">
+                                        <input type="radio" name="options" onclick="plus4()" id="option3"
+                                            autocomplete="off"> +
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="card-selection-lighter">Balcony</p>
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-secondary " id="minus">
+                                        <input type="radio" name="options" id="option1" onclick="minus5()"
+                                            autocomplete="off" checked>
+                                        -
+                                    </label>
+                                    <label class="btn btn-secondary" style="width:80px;" id="shownum5">
+                                        0
+                                    </label>
+                                    <label class="btn btn-secondar" id="plus">
+                                        <input type="radio" name="options" id="option3" onclick="plus5()"
+                                            autocomplete="off"> +
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="col-md-4">
+                                <p class="card-selection-lighter">Garage</p>
+                                <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                    <label class="btn btn-secondary " id="minus">
+                                        <input type="radio" name="options" id="option1" onclick="minus6()"
+                                            autocomplete="off" checked>
+                                        -
+                                    </label>
+                                    <label class="btn btn-secondary" style="width:80px;" id="shownum6">
+                                        0
+                                    </label>
+                                    <label class="btn btn-secondar" id="plus">
+                                        <input type="radio" name="options" id="option3" onclick="plus6()"
+                                            autocomplete="off"> +
+                                    </label>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <hr>
+
+                <!-- Extras -->
+                <!-- row1 -->
+                <div class="row">
+                    <div class="col-md-4">
+                        <p class="card-selection" style="margin:0px;">
+                            Extras <br>
+                        </p>
+                        <p class="card-selection-lighter" style="margin-bottom: 0px; width:90%;">
+                            Although these requests are optional, you should still check with your real estate agent
+                            about the
+                            <b style="font-weight: bold;">end of lease
+                                <!-- &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; -->
+                                cleaning</b>
+                            requirements of your home.
+                        </p>
+
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row" style="height:100%;">
+                            <!-- ช่อง 1 -->
+                            <div class="col-md-4 mx-auto">
+                                <div style="border: 1px solid #ddd; border-radius:5%; height:97%; width:110%;">
+                                    <div class="row">
+                                        <img src="1.png" alt="" class="img-in-box">
+                                        <input type="checkbox" id="check1" name="check1"
+                                            style="margin-left: 1%; margin-top:4%; width:2.5vw; height:2.5vh;">
+                                    </div>
+                                    <div class="row mx-auto" style="line-height: 2px; margin-top: 10%">
+                                        <p class="card-selection-lighter"
+                                            style="font-size: 1em; width:100%; text-align:center;">Carpet steam
+                                            clean</p>
+                                        <p class="card-selection-lighter"
+                                            style="font-size: 0.9em; width:100%; text-align:center;">entire property
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ช่อง 2 -->
+                            <div class="col-md-4 mx-auto">
+                                <div style="border: 1px solid #ddd; border-radius:5%; height:97%; width:110%;">
+                                    <div class="row">
+                                        <img src="2.png" alt="" class="img-in-box">
+
+                                        <input type="checkbox" id="check2" name="check2"
+                                            style="margin-left: 1%; margin-top:4%; width:2.5vw; height:2.5vh;">
+
+                                    </div>
+                                    <div class="row mx-auto" style="line-height: 2px; margin-top: 11%">
+                                        <p class="card-selection-lighter"
+                                            style="font-size: 1em; width:100%; text-align:center;">Wall wash</p>
+                                        <p class="card-selection-lighter"
+                                            style="font-size: 0.9em; width:100%; text-align:center;">entire property
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ช่อง 3 -->
+                            <div class="col-md-4 mx-auto">
+                                <div style="border: 1px solid #ddd; border-radius:5%; height:97%; width:110%;"
+                                    onmouseover="swap()" onmouseout="swap2()">
+                                    <div class="row" id="hide-item">
+                                        <img src="3.png" alt="" class="img-in-box">
+                                    </div>
+                                    <div class="row" id="hover-item">
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-secondary " id="minus">
+                                                <input class="text-light" type="radio" onclick="minus7()"
+                                                    name="options" id="option1" autocomplete="off" checked> -
+                                            </label>
+                                            <label class="btn btn-secondary" style="width:60px;" id="shownum7">
+                                                0
+                                            </label>
+                                            <label class="btn btn-secondar" id="plus">
+                                                <input type="radio" name="options" id="option3" onclick="plus7()"
+                                                    autocomplete="off">
+                                                +
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-auto" style="line-height: 2px; margin-top: 6%">
+                                        <p class="card-selection-lighter"
+                                            style="font-size: 1em; width:100%; text-align:center;">Blind deep clean
+                                        </p>
+                                        <p class="card-selection-lighter"
+                                            style="font-size: 0.9em; width:100%; text-align:center;">non-fabric
+                                            blinds only</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--จบ row1 -->
+
+                <!-- row2 -->
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row" style="height:112%;">
+                            <!-- ช่อง 4 -->
+                            <div class="col-md-4 mx-auto" onmouseover="swap3()" onmouseout="swap4()">
+                                <div style="border: 1px solid #ddd; border-radius:5%; height:97%; width:110%;">
+                                    <div class="row" id="hide-item2">
+                                        <img src="4.png" alt="" class="img-in-box">
+                                    </div>
+                                    <div class="row" id="hover-item2">
+                                        <div class="btn-group btn-group-toggle" data-toggle="buttons">
+                                            <label class="btn btn-secondary " id="minus">
+                                                <input class="text-light" type="radio" name="options"
+                                                    onclick="minus8()" id="option1" autocomplete="off" checked> -
+                                            </label>
+                                            <label class="btn btn-secondary" style="width:60px;" id="shownum8">
+                                                0
+                                            </label>
+                                            <label class="btn btn-secondar" id="plus">
+                                                <input type="radio" name="options" id="option3" onclick="plus8()"
+                                                    autocomplete="off">
+                                                +
+                                            </label>
+                                        </div>
+                                    </div>
+                                    <div class="row mx-auto" style="line-height: 2px; margin-top: 10%">
+                                        <p class="card-selection-lighter"
+                                            style="font-size: 1em; width:100%; text-align:center;">Window wash</p>
+                                        <p class="card-selection-lighter"
+                                            style="font-size: 0.9em; width:100%; text-align:center;">external
+                                            windows</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ช่อง 5 -->
+                            <div class="col-md-4 mx-auto">
+                                <div style="border: 1px solid #ddd; border-radius:5%; height:97%; width:110%;">
+                                    <div class="row">
+                                        <img src="5.png" alt="" class="img-in-box">
+
+                                        <input type="checkbox" id="check5" name="check5"
+                                            style="margin-left: 1%; margin-top:4%; width:2.5vw; height:2.5vh;">
+
+                                    </div>
+                                    <div class="row mx-auto" style="line-height: 2px; margin-top: 9%">
+                                        <p class="card-selection-lighter"
+                                            style="font-size: 1em; width:100%; text-align:center;">Fridge</p>
+                                        <p class="card-selection-lighter"
+                                            style="font-size: 0.9em; width:100%; text-align:center;">internal deep
+                                            clean</p>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- ช่อง 6 -->
+                            <div class="col-md-4 mx-auto">
+                                <div style="border: 1px solid #ddd; border-radius:5%; height:97%; width:110%;">
+                                    <div class="row">
+                                        <img src="6.png" alt="" class="img-in-box">
+
+                                        <input type="checkbox" id="check6" name="check6"
+                                            style="margin-left: -5%; margin-top:4%; width:2.5vw; height:2.5vh;">
+
+                                    </div>
+                                    <div class="row mx-auto" style="line-height: 2px; margin-top: 8%">
+                                        <p class="card-selection-lighter"
+                                            style="font-size: 1em; width:100%; text-align:center;">Large oven</p>
+                                        <p class="card-selection-lighter"
+                                            style="font-size: 0.9em; width:100%; text-align:center;">wide (90cm) or
+                                        </p>
+                                        <p class="card-selection-lighter"
+                                            style="font-size: 0.9em; width:100%; text-align:center;">double</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- จบ row2 -->
+
+                <!-- row3 -->
+                <div class="row mt-4">
+                    <div class="col-md-4">
+                    </div>
+                    <div class="col-md-8">
+                        <div class="row" style="height:114%;">
+                            <!-- ช่อง 7 -->
+                            <div class="col-md-4 mx-auto">
+                                <div style="border: 1px solid #ddd; border-radius:5%; height:97%; width:110%;">
+                                    <div class="row">
+                                        <img src="7.png" alt="" class="img-in-box">
+
+                                        <input type="checkbox" id="check7" name="check7"
+                                            style="margin-left: -4%; margin-top:4%; width:2.5vw; height:2.5vh;">
+
+                                    </div>
+                                    <div class="row mx-auto" style="line-height: 2px; margin-top: 5%">
+                                        <p class="card-selection-lighter"
+                                            style="font-size: 1em; width:100%; text-align:center;">Microwave</p>
+                                        <p class="card-selection-lighter"
+                                            style="font-size: 0.9em; width:100%; text-align:center;">internal deep
+                                            clean</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!-- ช่อง 8 -->
+                            <div class="col-md-4 mx-auto">
+                                <div style="border: 1px solid #ddd; border-radius:5%; height:97%; width:110%;">
+                                    <div class="row">
+                                        <img src="8.png" alt="" class="img-in-box">
+
+                                        <input type="checkbox" id="check8" name="check8"
+                                            style="margin-left: 1%; margin-top:4%; width:2.5vw; height:2.5vh;">
+
+                                    </div>
+                                    <div class="row mx-auto" style="line-height: 2px; margin-top: 11%">
+                                        <p class="card-selection-lighter"
+                                            style="font-size: 1em; width:100%; text-align:center;">Key pickup</p>
+                                        <p class="card-selection-lighter"
+                                            style="font-size: 0.9em; width:100%; text-align:center;">and drop-off
+                                        </p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="col-md-4 mx-auto"></div>
+                        </div>
+                    </div>
+                </div>
+                <!-- จบ row3 -->
+
+                <!----------------- จบ Extras -------------->
+                <!-- 
+        side bar
+     -->
+                <div id="mySidebar" class="sidebar">
+                    <div class="container" style="height:80%;">
+                        <p class="font-sizebar" style="text-align:center;">
+                            Quote
+                        </p>
+                        <p id="block1"></p>
+                        <hr>
+                        <p id="block2"></p>
+                        <p id="block22"></p>
+                        <p id="block23"></p>
+                        <p id="block24"></p>
+                        <p id="block25"></p>
+                        <hr>
+                        <p id="block3"></p>
+                        <p id="block32"></p>
+                        <p id="block33"></p>
+                        <hr>
+                        <p id="block41"></p>
+                        <p id="block42"></p>
+                        <p id="block43"></p>
+                        <p id="block44"></p>
+                        <p id="block45"></p>
+                        <p id="block46"></p>
+                        <p id="block47"></p>
+                        <p id="block48"></p>
+                    </div>
+                    <hr>
+                    <p id="block51" style="padding-left:15px;"></p>
+                    <p id="block52"></p>
+                    <p id="block53"></p>
+                    <hr>
+                    <div class="row">
+                        <div class="col-6">
+                            <a href="javascript:void(0)" onclick="closeNav()">
+                                <img src="Back.png" class="closebtn">
+                            </a>
+                        </div>
+
+                        <div class="col-6">
+                            <a>
+                                <button class="openbtn" href="javascript:void(0)"
+                                    style="width:100%; margin-top: 12px;" onclick="Checkout()" id="alert">Checkout
+                                    -> </button>
+                            </a>
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <!-- ปุ่ม Get Quote -->
+                <div id="main">
+                    <button class="openbtn" onclick="openNav()">GET QUOTE > </button>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <!-- จบ Get a Quote -->
 
     <!-- footer -->
     <div class="footer_content" id="footer_box" style="margin-top: 150px;">
