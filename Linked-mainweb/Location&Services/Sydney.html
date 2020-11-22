@@ -222,12 +222,19 @@
                 </form>
             </div>
         </nav>
-        <!-- svg สีฟ้า -->
-        <!-- <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320" style="height:800px; width:auto;">
-            <path fill="#1D9DFF" fill-opacity="1"
-                d="M0,128L60,154.7C120,181,240,235,360,234.7C480,235,600,181,720,165.3C840,149,960,171,1080,192C1200,213,1320,235,1380,245.3L1440,256L1440,0L1380,0C1320,0,1200,0,1080,0C960,0,840,0,720,0C600,0,480,0,360,0C240,0,120,0,60,0L0,0Z">
-            </path>
-        </svg> -->
+        <div>
+            <div class="bluescreen"></div>
+            <svg viewBox="0 0 315 250" preserveAspectRatio="none" style="height: 100%; width: 100%; margin-top:-4.8%;">
+                <defs>
+                    <clipPath id="banner">
+                        <path d="M-2.59,143.19 C161.62,152.06 338.82,24.76 500.22,152.06 L500.00,0.00 L0.00,0.00 Z"
+                            style="stroke: none; fill: #08f;"></path>
+                    </clipPath>
+                </defs>
+                <image width="100%" xlink:href="wave.svg" clip-path="url(#banner)">
+            </svg>
+        </div>
+
     </section>
 
     <!--     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -277,10 +284,10 @@
         </div> -->
 
         <!-- banner -->
-        <div class="row mx-auto ">
+        <div class="row mx-auto" style="margin-top: -140%; color:white;">
             <!-- ข้อความ -->
             <div class="col-md-5" id="head_banner" style="margin-top:100px;">
-                <h1 class="mt-5" style="font-size: 48px;">
+                <h1 class="" style="font-size: 48px;">
                     So fresh. So clean.
                 </h1>
                 <h1 style="font-size: 44px;">
@@ -303,7 +310,7 @@
             <!-- รูปภาพ -->
             <div class="col-md-6">
                 <img id="pic_banner"
-                    src="https://thisisneat.com.au/wp-content/uploads/2020/02/inner-west-bond-cleaning-customers.svg"
+                    src="https://thisisneat.com.au/wp-content/uploads/2019/06/end-of-lease-cleaning-customers.svg"
                     alt="">
             </div>
         </div>
@@ -352,9 +359,9 @@
         </div>
 
         <!-- ผู้ชายถูพื้น -->
-        <div class="row">
+        <div class="row" style="margin-top:100px;">
             <!-- ข้อความ -->
-            <div class="col-md-5 box_man_clean">
+            <div class="col-md-5 box_man_clean" style="margin-top: 0px;">
                 <h1 class="mt-5" style="font-size: 2.7em;">
                     Insta-worthy cleans
                 </h1>
@@ -370,6 +377,29 @@
                         Sydney tenants love us for their bond cleans.
                     </p>
                 </div>
+                <!-- รูปภาพ 6รูป -->
+                <div class="row">
+                    <div class="col-4" style="padding:5px;">
+                        <img src="https://i2.wp.com/thisisneat.com.au/wp-content/uploads/2019/07/end-of-tenancy-cleaning-oven-before-after.jpg?resize=840%2C525&ssl=1" style="border-radius:5px;"alt="">
+                    </div>
+                    <div class="col-4" style="padding:5px;">
+                        <img src="https://i1.wp.com/thisisneat.com.au/wp-content/uploads/2020/02/carpet-steam-cleaning-before-after.jpg?resize=840%2C525&ssl=1" style="border-radius:5px;"alt="">
+                    </div>
+                    <div class="col-4" style="padding:5px;">
+                        <img src="https://i2.wp.com/thisisneat.com.au/wp-content/uploads/2020/01/sydney-exit-cleaner-bathroom.jpg?resize=560%2C350&ssl=1" style="border-radius:5px;"alt="">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-4" style="padding:5px;">
+                        <img src="https://i0.wp.com/thisisneat.com.au/wp-content/uploads/2020/01/end-of-lease-cleaning-service.jpg?resize=560%2C350&ssl=1" style="border-radius:5px;"alt="">
+                    </div>
+                    <div class="col-4" style="padding:5px;">
+                        <img src="https://i1.wp.com/thisisneat.com.au/wp-content/uploads/2019/07/exit-cleaning-fridge-before-after.jpg?resize=560%2C350&ssl=1" style="border-radius:5px;"alt="">
+                    </div>
+                    <div class="col-4" style="padding:5px;">
+                        <img src="https://i2.wp.com/thisisneat.com.au/wp-content/uploads/2020/02/tenancy-clean-rangehood-before-after.jpg?resize=560%2C350&ssl=1" style="border-radius:5px;"alt="">
+                    </div>
+                </div>
             </div>
             <!-- รูปภาพ -->
             <div class="col-md-6">
@@ -380,7 +410,7 @@
         </div>
 
         <!-- ชายจูงหมา -->
-        <div class="row">
+        <div class="row" style="margin-top: 100px;">
             <!-- รูปภาพ -->
             <div class="col-md-5">
                 <img class="pic_dog"
@@ -2221,8 +2251,7 @@
         <!----- Get a Quote ------>
 
         <div class="body_card">
-            <div class="card shadow p-3 mb-5 bg-white rounded"
-                style="height:auto; margin-right:15%; margin-left:15%;">
+            <div class="card shadow p-3 mb-5 bg-white rounded" style="height:auto; margin-right:15%; margin-left:15%;">
                 <div class="card-body" style="padding:30px;">
                     <p class="card-header-mystyle" style="margin:0px;" id="section">
                         Get a Quote

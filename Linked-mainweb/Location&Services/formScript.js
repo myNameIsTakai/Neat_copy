@@ -536,6 +536,6 @@ function closeNav() {
 }
 
 function Checkout(){
-    alert("สวัสดีมานพและผองพี่");
+    alert("ชำระเงินสำเร็จ= =");
     document.getElementById("mySidebar").style.width = "0";
 }
